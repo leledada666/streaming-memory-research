@@ -1,0 +1,228 @@
+{
+ "config": {
+  "n": 64,
+  "prime": 64,
+  "layers": "0,4,9,14,19,23",
+  "pdim": 128,
+  "alphas": "1.0",
+  "randw": 0,
+  "lags": "0,1,5,10",
+  "tag": "codecheck"
+ },
+ "mean_norm": 0.5165255069732666,
+ "runs": [
+  {
+   "pass": "a1.0_fixedw",
+   "alpha": 1.0,
+   "random_w": false,
+   "rows": [
+    {
+     "auc_test": 0.96875,
+     "alpha": 0.001,
+     "auc_train": 0.9383753501400559,
+     "layer": 0,
+     "lag": 0
+    },
+    {
+     "auc_test": 0.85625,
+     "alpha": 0.1,
+     "auc_train": 0.7911764705882354,
+     "layer": 0,
+     "lag": 1
+    },
+    {
+     "auc_test": 0.484375,
+     "alpha": 0.01,
+     "auc_train": 0.7105263157894738,
+     "layer": 0,
+     "lag": 5
+    },
+    {
+     "auc_test": 0.4571428571428572,
+     "alpha": 0.001,
+     "auc_train": 0.6468253968253967,
+     "layer": 0,
+     "lag": 10
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 4,
+     "lag": 0
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 4,
+     "lag": 1
+    },
+    {
+     "auc_test": 0.6171875,
+     "alpha": 0.001,
+     "auc_train": 0.9111842105263157,
+     "layer": 4,
+     "lag": 5
+    },
+    {
+     "auc_test": 0.36190476190476195,
+     "alpha": 0.001,
+     "auc_train": 0.8214285714285715,
+     "layer": 4,
+     "lag": 10
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 9,
+     "lag": 0
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.01,
+     "auc_train": 1.0,
+     "layer": 9,
+     "lag": 1
+    },
+    {
+     "auc_test": 0.6171875,
+     "alpha": 0.001,
+     "auc_train": 0.9967105263157895,
+     "layer": 9,
+     "lag": 5
+    },
+    {
+     "auc_test": 0.5428571428571429,
+     "alpha": 1.0,
+     "auc_train": 0.7579365079365079,
+     "layer": 9,
+     "lag": 10
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.1,
+     "auc_train": 1.0,
+     "layer": 14,
+     "lag": 0
+    },
+    {
+     "auc_test": 0.9625,
+     "alpha": 0.1,
+     "auc_train": 0.9764705882352942,
+     "layer": 14,
+     "lag": 1
+    },
+    {
+     "auc_test": 0.5859375,
+     "alpha": 1.0,
+     "auc_train": 0.819078947368421,
+     "layer": 14,
+     "lag": 5
+    },
+    {
+     "auc_test": 0.48571428571428577,
+     "alpha": 10.0,
+     "auc_train": 0.746031746031746,
+     "layer": 14,
+     "lag": 10
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 19,
+     "lag": 0
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 19,
+     "lag": 1
+    },
+    {
+     "auc_test": 0.6171875,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 19,
+     "lag": 5
+    },
+    {
+     "auc_test": 0.6761904761904762,
+     "alpha": 10.0,
+     "auc_train": 0.6388888888888888,
+     "layer": 19,
+     "lag": 10
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 23,
+     "lag": 0
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 23,
+     "lag": 1
+    },
+    {
+     "auc_test": 0.5625,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": 23,
+     "lag": 5
+    },
+    {
+     "auc_test": 0.6285714285714286,
+     "alpha": 10.0,
+     "auc_train": 0.6587301587301587,
+     "layer": 23,
+     "lag": 10
+    },
+    {
+     "auc_test": 1.0,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": -1,
+     "lag": 0
+    },
+    {
+     "auc_test": 0.9875,
+     "alpha": 0.1,
+     "auc_train": 1.0,
+     "layer": -1,
+     "lag": 1
+    },
+    {
+     "auc_test": 0.5625,
+     "alpha": 0.001,
+     "auc_train": 1.0,
+     "layer": -1,
+     "lag": 5
+    },
+    {
+     "auc_test": 0.5142857142857142,
+     "alpha": 10.0,
+     "auc_train": 0.753968253968254,
+     "layer": -1,
+     "lag": 10
+    }
+   ],
+   "state_meanabs_by_layer": {
+    "0": 0.0017880804371088743,
+    "4": 0.00990812573581934,
+    "9": 0.025816433131694794,
+    "14": 0.030493535101413727,
+    "19": 0.017869116738438606,
+    "23": 0.02383868210017681
+   },
+   "state_norm_source": "mean |S| over [heads, D, D]"
+  }
+ ],
+ "runtime_s": 70.6
+}

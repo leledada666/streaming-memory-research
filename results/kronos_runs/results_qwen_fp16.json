@@ -1,0 +1,336 @@
+{
+ "part": "qwen",
+ "dtype": "fp16",
+ "reps": 1,
+ "steps": 2000,
+ "prime": 64,
+ "slice_bars": [
+  112608,
+  114671
+ ],
+ "split": [
+  92736,
+  19872,
+  19872
+ ],
+ "gpu_start": {
+  "nvidia_smi(utilization.gpu,temperature.gpu,memory.used,power.draw,clocks.sm)": "2 %, 60, 275 MiB, 11.34 W, 420 MHz",
+  "cs2_running": false,
+  "time": "2026-10-18 05:36:35"
+ },
+ "modes": {},
+ "qwen": {
+  "fresh": {
+   "ttft_ms": {
+    "p50": 500.5914500070503,
+    "p95": 522.428620003484,
+    "max": 527.3966999957338
+   },
+   "total_ms": {
+    "p50": 567.7528500091285,
+    "p95": 3836.5094200002204,
+    "max": 3922.076200004085
+   },
+   "mean_new_tokens": 12.95,
+   "rounds": 20,
+   "discarded_warmup_rounds": 2,
+   "per_round": [
+    {
+     "ttft": 1153.0334999988554,
+     "total": 1287.1742999996059,
+     "new": 2,
+     "prompt": 3343
+    },
+    {
+     "ttft": 520.8616000018083,
+     "total": 3394.209800011595,
+     "new": 50,
+     "prompt": 3343
+    },
+    {
+     "ttft": 506.2017000018386,
+     "total": 3922.076200004085,
+     "new": 64,
+     "prompt": 3343
+    },
+    {
+     "ttft": 510.8758999995189,
+     "total": 3821.4093999995384,
+     "new": 63,
+     "prompt": 3342
+    },
+    {
+     "ttft": 519.3129999970552,
+     "total": 587.7171000029193,
+     "new": 2,
+     "prompt": 3341
+    },
+    {
+     "ttft": 527.3966999957338,
+     "total": 583.3071999950334,
+     "new": 2,
+     "prompt": 3340
+    },
+    {
+     "ttft": 521.5519000048516,
+     "total": 576.3800999993691,
+     "new": 2,
+     "prompt": 3340
+    },
+    {
+     "ttft": 513.2650999876205,
+     "total": 576.9878999999491,
+     "new": 2,
+     "prompt": 3340
+    },
+    {
+     "ttft": 500.18280000949744,
+     "total": 557.9938000009861,
+     "new": 2,
+     "prompt": 3339
+    },
+    {
+     "ttft": 498.2343000010587,
+     "total": 563.0812000017613,
+     "new": 2,
+     "prompt": 3338
+    },
+    {
+     "ttft": 497.5734000036027,
+     "total": 566.9823000062024,
+     "new": 2,
+     "prompt": 3338
+    },
+    {
+     "ttft": 494.67030000232626,
+     "total": 555.9974000061629,
+     "new": 2,
+     "prompt": 3338
+    },
+    {
+     "ttft": 494.6168000024045,
+     "total": 571.0599000012735,
+     "new": 2,
+     "prompt": 3339
+    },
+    {
+     "ttft": 489.73169999953825,
+     "total": 556.4625000115484,
+     "new": 2,
+     "prompt": 3340
+    },
+    {
+     "ttft": 497.68100000801496,
+     "total": 557.6174000016181,
+     "new": 2,
+     "prompt": 3339
+    },
+    {
+     "ttft": 499.86640000133775,
+     "total": 563.127399989753,
+     "new": 2,
+     "prompt": 3339
+    },
+    {
+     "ttft": 499.71170000208076,
+     "total": 558.0152000038652,
+     "new": 2,
+     "prompt": 3340
+    },
+    {
+     "ttft": 501.00010000460315,
+     "total": 565.9163000091212,
+     "new": 2,
+     "prompt": 3341
+    },
+    {
+     "ttft": 503.38310000370257,
+     "total": 568.5234000120545,
+     "new": 2,
+     "prompt": 3341
+    },
+    {
+     "ttft": 505.73180000355933,
+     "total": 2989.3722999986494,
+     "new": 50,
+     "prompt": 3342
+    }
+   ]
+  },
+  "cached": {
+   "ttft_ms": {
+    "p50": 60.25235000561224,
+    "p95": 71.62233000053675,
+    "max": 73.22900000144728
+   },
+   "total_ms": {
+    "p50": 122.67735000204993,
+    "p95": 130.50700500098174,
+    "max": 135.34239999717101
+   },
+   "mean_new_tokens": 2.0,
+   "rounds": 20,
+   "discarded_warmup_rounds": 2,
+   "per_round": [
+    {
+     "ttft": 508.8863999990281,
+     "total": 573.1753000000026,
+     "new": 2,
+     "input": 3343,
+     "ctx_after": 3344
+    },
+    {
+     "ttft": 107.27609999594279,
+     "total": 132.2583000001032,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 3415
+    },
+    {
+     "ttft": 73.22900000144728,
+     "total": 124.12920000497252,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 3486
+    },
+    {
+     "ttft": 57.09379998734221,
+     "total": 118.12469999131281,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 3557
+    },
+    {
+     "ttft": 66.74920000659768,
+     "total": 112.59820000850596,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 3628
+    },
+    {
+     "ttft": 59.28750000020955,
+     "total": 113.30050000105985,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 3699
+    },
+    {
+     "ttft": 59.23860000621062,
+     "total": 123.29590000445023,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 3771
+    },
+    {
+     "ttft": 58.06740000844002,
+     "total": 110.86430000432301,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 3842
+    },
+    {
+     "ttft": 56.738100000075065,
+     "total": 117.57430000579916,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 3913
+    },
+    {
+     "ttft": 57.2427000006428,
+     "total": 122.05879999964964,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 3985
+    },
+    {
+     "ttft": 67.79689999530092,
+     "total": 128.31739999819547,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 4057
+    },
+    {
+     "ttft": 64.1650000034133,
+     "total": 124.82850000378676,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 4129
+    },
+    {
+     "ttft": 59.87890000687912,
+     "total": 113.37300000013784,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 4201
+    },
+    {
+     "ttft": 67.07319999986794,
+     "total": 127.33540000044741,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 4273
+    },
+    {
+     "ttft": 58.233000003383495,
+     "total": 110.33660000248346,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 4344
+    },
+    {
+     "ttft": 60.625800004345365,
+     "total": 118.15910000586882,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 4415
+    },
+    {
+     "ttft": 58.65809999522753,
+     "total": 126.3331000081962,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 4487
+    },
+    {
+     "ttft": 71.28030000603758,
+     "total": 135.34239999717101,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 4559
+    },
+    {
+     "ttft": 63.20649999543093,
+     "total": 126.62019999697804,
+     "new": 2,
+     "input": 70,
+     "ctx_after": 4630
+    },
+    {
+     "ttft": 71.33880000037607,
+     "total": 129.65370000165422,
+     "new": 2,
+     "input": 71,
+     "ctx_after": 4702
+    }
+   ]
+  },
+  "sample_text": {
+   "fresh": [
+    "CLOSE<|im_end|>",
+    "CLOSE\nThe market is showing a clear downtrend with a large volume of selling pressure. The price is currently below the 50-day moving average, and the candles are closing below the previous close. This indicates a strong bearish momentum.<|im_end|>"
+   ],
+   "cached": [
+    "CLOSE<|im_end|>",
+    "CLOSE<|im_end|>",
+    "CLOSE<|im_end|>"
+   ]
+  },
+  "definition": "fp16, greedy, cap 64 new tokens, stop at <|im_end|>. fresh: system+user prompt with last 60 bars as text, new DynamicCache each round. cached: round0 = same prompt; each later round appends only the new bar as a user turn on top of the carried KV cache (which includes all previous replies)."
+ },
+ "gpu_end": {
+  "nvidia_smi(utilization.gpu,temperature.gpu,memory.used,power.draw,clocks.sm)": "46 %, 68, 5719 MiB, 51.18 W, 2610 MHz",
+  "cs2_running": false,
+  "time": "2026-10-18 05:37:09"
+ },
+ "wall_s": 34.5
+}

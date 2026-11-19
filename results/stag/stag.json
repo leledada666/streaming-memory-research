@@ -1,0 +1,1016 @@
+{
+ "meta": {
+  "script": "stag.py",
+  "T": 96,
+  "B": 4,
+  "NB": 4,
+  "amp": 1.0,
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "readout": "ridge on model.norm(x) (64-d random proj + full 512)",
+  "train_batches": 2,
+  "test_batches": 2,
+  "runtime_s": 36.6
+ },
+ "rows": [
+  {
+   "seed": 0,
+   "arm": "all_same_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "staggered_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "site_0_7_L15",
+   "L": 15,
+   "sites": [
+    0,
+    7
+   ],
+   "delays": [
+    15,
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "site_0_L15",
+   "L": 15,
+   "sites": [
+    0
+   ],
+   "delays": [
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "site_7_L15",
+   "L": 15,
+   "sites": [
+    7
+   ],
+   "delays": [
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "none_L15",
+   "L": 15,
+   "sites": [],
+   "delays": [],
+   "acc_proj64": 0.469,
+   "acc_full512": 0.472,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "all_current_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "acc_proj64": 0.528,
+   "acc_full512": 0.556,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "staggered_cur_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "acc_proj64": 0.463,
+   "acc_full512": 0.465,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "staggered_cur_L7",
+   "L": 7,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "all_wrong_L23",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23
+   ],
+   "acc_proj64": 0.508,
+   "acc_full512": 0.523,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "all_same_L0",
+   "L": 0,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "all_same_L10",
+   "L": 10,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "site_0_7_L10",
+   "L": 10,
+   "sites": [
+    0,
+    7
+   ],
+   "delays": [
+    10,
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "site_0_L10",
+   "L": 10,
+   "sites": [
+    0
+   ],
+   "delays": [
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "site_7_L10",
+   "L": 10,
+   "sites": [
+    7
+   ],
+   "delays": [
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 0,
+   "arm": "none_L10",
+   "L": 10,
+   "sites": [],
+   "delays": [],
+   "acc_proj64": 0.464,
+   "acc_full512": 0.493,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "all_same_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "staggered_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "site_0_7_L15",
+   "L": 15,
+   "sites": [
+    0,
+    7
+   ],
+   "delays": [
+    15,
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "site_0_L15",
+   "L": 15,
+   "sites": [
+    0
+   ],
+   "delays": [
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "site_7_L15",
+   "L": 15,
+   "sites": [
+    7
+   ],
+   "delays": [
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "none_L15",
+   "L": 15,
+   "sites": [],
+   "delays": [],
+   "acc_proj64": 0.502,
+   "acc_full512": 0.492,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "all_current_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "acc_proj64": 0.502,
+   "acc_full512": 0.514,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "staggered_cur_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "acc_proj64": 0.506,
+   "acc_full512": 0.508,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "staggered_cur_L7",
+   "L": 7,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "all_wrong_L23",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23
+   ],
+   "acc_proj64": 0.515,
+   "acc_full512": 0.529,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "all_same_L0",
+   "L": 0,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "all_same_L10",
+   "L": 10,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "site_0_7_L10",
+   "L": 10,
+   "sites": [
+    0,
+    7
+   ],
+   "delays": [
+    10,
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "site_0_L10",
+   "L": 10,
+   "sites": [
+    0
+   ],
+   "delays": [
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "site_7_L10",
+   "L": 10,
+   "sites": [
+    7
+   ],
+   "delays": [
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 1,
+   "arm": "none_L10",
+   "L": 10,
+   "sites": [],
+   "delays": [],
+   "acc_proj64": 0.503,
+   "acc_full512": 0.497,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "all_same_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15,
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "staggered_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    15,
+    14,
+    13,
+    12,
+    11,
+    10,
+    9,
+    8
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "site_0_7_L15",
+   "L": 15,
+   "sites": [
+    0,
+    7
+   ],
+   "delays": [
+    15,
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "site_0_L15",
+   "L": 15,
+   "sites": [
+    0
+   ],
+   "delays": [
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "site_7_L15",
+   "L": 15,
+   "sites": [
+    7
+   ],
+   "delays": [
+    15
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "none_L15",
+   "L": 15,
+   "sites": [],
+   "delays": [],
+   "acc_proj64": 0.471,
+   "acc_full512": 0.497,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "all_current_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "acc_proj64": 0.485,
+   "acc_full512": 0.483,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "staggered_cur_L15",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "acc_proj64": 0.498,
+   "acc_full512": 0.498,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "staggered_cur_L7",
+   "L": 7,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "all_wrong_L23",
+   "L": 15,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23,
+    23
+   ],
+   "acc_proj64": 0.438,
+   "acc_full512": 0.454,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "all_same_L0",
+   "L": 0,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "all_same_L10",
+   "L": 10,
+   "sites": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "delays": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "site_0_7_L10",
+   "L": 10,
+   "sites": [
+    0,
+    7
+   ],
+   "delays": [
+    10,
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "site_0_L10",
+   "L": 10,
+   "sites": [
+    0
+   ],
+   "delays": [
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "site_7_L10",
+   "L": 10,
+   "sites": [
+    7
+   ],
+   "delays": [
+    10
+   ],
+   "acc_proj64": 1.0,
+   "acc_full512": 1.0,
+   "amp": 1.0
+  },
+  {
+   "seed": 2,
+   "arm": "none_L10",
+   "L": 10,
+   "sites": [],
+   "delays": [],
+   "acc_proj64": 0.49,
+   "acc_full512": 0.504,
+   "amp": 1.0
+  }
+ ]
+}

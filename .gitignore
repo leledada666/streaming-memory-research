@@ -1,0 +1,50 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Environments
+.venv/
+venv/
+env/
+
+# Model weights / tensors / checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.gguf
+*.npz
+*.npy
+*.pkl
+
+# Market data and token files
+*.csv.gz
+*.parquet
+*.zip
+data/
+bn/
+dz/
+spot/
+binance_1m/
+
+# Third-party source, weights, run environments
+kronos_src/
+models/
+hf_home/
+ms_cache/
+wheels/
+
+# Experiment outputs (keep the curated JSON/CSV in results/)
+runs/
+out/
+*.log
+!results/**/*.log
+!results/**/*.txt
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

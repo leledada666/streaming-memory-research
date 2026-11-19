@@ -1,0 +1,110 @@
+{
+ "part": "kronos",
+ "dtype": "fp32",
+ "reps": 1,
+ "steps": 2000,
+ "prime": 64,
+ "slice_bars": [
+  112608,
+  114671
+ ],
+ "split": [
+  92736,
+  19872,
+  19872
+ ],
+ "gpu_start": {
+  "nvidia_smi(utilization.gpu,temperature.gpu,memory.used,power.draw,clocks.sm)": "3 %, 51, 284 MiB, 8.97 W, 210 MHz",
+  "cs2_running": false,
+  "time": "2026-10-18 06:06:37"
+ },
+ "modes": {
+  "S": {
+   "latency_ms": {
+    "p50": 12.885399999504443,
+    "p95": 18.876844993792474,
+    "p99": 25.042988993081963,
+    "mean": 12.745555076928726,
+    "at_bar": {
+     "100": 6.076149998989422,
+     "500": 16.215399991779123,
+     "1000": 12.574799999129027,
+     "2000": 15.655799994419795
+    },
+    "per_rep_p95": [
+     18.876844993792474
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_ref": {
+    "max_abs": 3.5762786865234375e-07,
+    "mean_abs": 2.4348946681129747e-08,
+    "mean_kl": 2.1244161420577695e-11,
+    "max_kl": 1.7136337384461904e-07,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.0
+   }
+  },
+  "R": {
+   "latency_ms": {
+    "p50": 41.62479999649804,
+    "p95": 56.00133000261848,
+    "p99": 61.30160800414163,
+    "mean": 42.46002462970514,
+    "at_bar": {
+     "100": 33.15985000517685,
+     "500": 41.36474999540951,
+     "1000": null,
+     "2000": null
+    },
+    "per_rep_p95": [
+     56.00133000261848
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {
+     "truncated_at_step": 793,
+     "reason": "reserved VRAM 6.08 GB > cap"
+    }
+   ],
+   "extra": {
+    "final_context_positions": 36064,
+    "n_steps_done": 793
+   },
+   "cons_vs_S": {
+    "max_abs": 0.3934219181537628,
+    "mean_abs": 0.16999720225230314,
+    "mean_kl": 0.17811117578073699,
+    "max_kl": 0.3653770859500665,
+    "n_steps_compared": 793,
+    "argmax_disagree": 0.44388398486759145
+   }
+  }
+ },
+ "head": "E:\\rwkv7\\runs\\kronos_rl_1m_direct_bn3m_pertrade\\seed0\\best.pt",
+ "R_definition": "per round: one cached forward of [new bar (bypass on) + 16 fixed extra positions (s1=1..16, s2=0, stamp of the bar, no bypass)], DIRECT-head readout at the last extra position (m = current bar), argmax; then one cached forward of 1 write-back position encoding the action (s1=100+action, s2=0, no bypass). Context grows by 18 positions per bar. Kronos has no text, so this emulates prompt+output overhead.",
+ "R0_definition": "no cache: full causal forward over all bars [0..t] every step, readout at last position",
+ "W_definition": "no reusable cache (window start shifts): full forward over the last N bars every step, readout last",
+ "reference": "one full causal forward (no cache) over all 2064 positions, same bypass content; readout at each decision position",
+ "ref_action_freq": [
+  17,
+  1478,
+  505,
+  0
+ ],
+ "gpu_end": {
+  "nvidia_smi(utilization.gpu,temperature.gpu,memory.used,power.draw,clocks.sm)": "85 %, 63, 6191 MiB, 48.16 W, 2625 MHz",
+  "cs2_running": false,
+  "time": "2026-10-18 06:07:37"
+ },
+ "wall_s": 60.6
+}

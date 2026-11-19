@@ -1,0 +1,123 @@
+{
+ "meta": {
+  "script": "fir16.py",
+  "T": 32,
+  "W": 16,
+  "splits": [
+   0,
+   92736,
+   112608,
+   132480
+  ],
+  "windows_tr/va/te": [
+   8000,
+   3000,
+   12000
+  ],
+  "gru_ref": {
+   "params": 70353,
+   "acc_L15": 0.981
+  },
+  "runtime_s": 27.8
+ },
+ "rows": [
+  {
+   "arm": "A_fir16_ridge",
+   "L": 0,
+   "test_acc": 1.0,
+   "params": 33,
+   "note": "val=1.000"
+  },
+  {
+   "arm": "A_fir16_ridge",
+   "L": 5,
+   "test_acc": 1.0,
+   "params": 33,
+   "note": "val=1.000"
+  },
+  {
+   "arm": "A_fir16_ridge",
+   "L": 10,
+   "test_acc": 1.0,
+   "params": 33,
+   "note": "val=1.000"
+  },
+  {
+   "arm": "A_fir16_ridge",
+   "L": 15,
+   "test_acc": 1.0,
+   "params": 33,
+   "note": "val=1.000"
+  },
+  {
+   "arm": "A_fir16_ridge",
+   "L": 30,
+   "test_acc": 0.5008,
+   "params": 33,
+   "note": "val=0.501"
+  },
+  {
+   "arm": "D_tap_only_oracle",
+   "L": 0,
+   "test_acc": 1.0,
+   "params": 1,
+   "note": "\u4e0a\u754c"
+  },
+  {
+   "arm": "D_tap_only_oracle",
+   "L": 5,
+   "test_acc": 1.0,
+   "params": 1,
+   "note": "\u4e0a\u754c"
+  },
+  {
+   "arm": "D_tap_only_oracle",
+   "L": 10,
+   "test_acc": 1.0,
+   "params": 1,
+   "note": "\u4e0a\u754c"
+  },
+  {
+   "arm": "D_tap_only_oracle",
+   "L": 15,
+   "test_acc": 1.0,
+   "params": 1,
+   "note": "\u4e0a\u754c"
+  },
+  {
+   "arm": "B_fir16_cue_ridge",
+   "L": 5,
+   "test_acc": 1.0,
+   "params": 528,
+   "note": "train_lags=5,10 (unseen L -> 0 \u5757) val=1.000"
+  },
+  {
+   "arm": "B_fir16_cue_ridge",
+   "L": 10,
+   "test_acc": 1.0,
+   "params": 528,
+   "note": "train_lags=5,10 (unseen L -> 0 \u5757) val=1.000"
+  },
+  {
+   "arm": "B_fir16_cue_ridge",
+   "L": 15,
+   "test_acc": 0.498,
+   "params": 528,
+   "note": "train_lags=5,10 (unseen L -> 0 \u5757) val=1.000"
+  },
+  {
+   "arm": "C_fir16_mlp_matched",
+   "L": 15,
+   "test_acc": 1.0,
+   "params": 69633,
+   "note": "param_ratio_vs_GRU=0.99"
+  },
+  {
+   "arm": "C_fir16_mlp_matched",
+   "L": 30,
+   "test_acc": 0.4996,
+   "params": 69633,
+   "note": "param_ratio_vs_GRU=0.99"
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+ "variant": "emb",
+ "seed": 0,
+ "lag": 15,
+ "enc_width": 512,
+ "sites": [
+  0
+ ],
+ "trainable_params": 659714,
+ "test_acc": 0.5,
+ "best_val_acc": 0.5035686728395061,
+ "best_step": 200,
+ "steps_run": 200,
+ "stop_reason": "cap",
+ "steps_to_60_val": null,
+ "gates_at_best": [
+  0.12360480427742004
+ ],
+ "curve": [
+  {
+   "step": 100,
+   "val_acc": 0.5003375771604939,
+   "loss": 0.6931095123291016,
+   "gates": [
+    0.12078526616096497
+   ]
+  },
+  {
+   "step": 200,
+   "val_acc": 0.5035686728395061,
+   "loss": 0.6932951807975769,
+   "gates": [
+    0.12360480427742004
+   ]
+  }
+ ],
+ "n_val_targets": 20736,
+ "n_test_targets": 41472,
+ "runtime_s": 17.2
+}

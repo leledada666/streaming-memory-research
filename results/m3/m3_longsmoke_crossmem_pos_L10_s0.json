@@ -1,0 +1,134 @@
+{
+ "arm": "crossmem_pos",
+ "lag": 10,
+ "seed": 0,
+ "B": 8,
+ "T": 32,
+ "steps": 1200,
+ "lr": 0.001,
+ "device": "cpu",
+ "use_head_m": true,
+ "trainable_params": 923913,
+ "param_counts": {
+  "enc_head": 264192,
+  "pi": 131329,
+  "cm": 528384,
+  "gate": 8,
+  "trainable_total": 923913
+ },
+ "val_acc_best": 0.9978693181818182,
+ "val_acc_best_step": 1200,
+ "val_acc_final": 0.9979,
+ "test_acc": 0.8927556818181818,
+ "curve": [
+  {
+   "step": 200,
+   "val_acc": 0.5632,
+   "loss": 0.6084
+  },
+  {
+   "step": 400,
+   "val_acc": 0.8668,
+   "loss": 0.1156
+  },
+  {
+   "step": 600,
+   "val_acc": 0.9851,
+   "loss": 0.0192
+  },
+  {
+   "step": 800,
+   "val_acc": 0.9833,
+   "loss": 0.0479
+  },
+  {
+   "step": 1000,
+   "val_acc": 0.994,
+   "loss": 0.0096
+  },
+  {
+   "step": 1200,
+   "val_acc": 0.9979,
+   "loss": 0.015
+  }
+ ],
+ "causal_max_leak": 0.0,
+ "backbone_hash_unchanged": true,
+ "backbone_grad_tensors": 0,
+ "n_opt_params": 17,
+ "n_val_targets": 2816,
+ "n_test_targets": 4224,
+ "attn_diag": {
+  "diag_mass": 0.09096842631697655,
+  "argmax_acc": 0.09100341796875
+ },
+ "addr_probe_init": {
+  "0": {
+   "mass_at_target": 0.11604423075914383,
+   "mean_allowed": 0.12682798504829407,
+   "addr_ratio": 0.9149733847380453,
+   "addr_ratio_all": 3.7134153842926025,
+   "peak_ratio": 16.059571266174316,
+   "argmax_acc": 0.116180419921875
+  },
+  "10": {
+   "mass_at_target": 0.04822542332112789,
+   "mean_allowed": 0.051342133432626724,
+   "addr_ratio": 0.9392952745995897,
+   "addr_ratio_all": 1.5432135462760925,
+   "peak_ratio": 20.910408973693848,
+   "argmax_acc": 0.048251064494252205
+  },
+  "15": {
+   "mass_at_target": 0.016585113015025854,
+   "mean_allowed": 0.04354507103562355,
+   "addr_ratio": 0.3808723380301258,
+   "addr_ratio_all": 0.5307236164808273,
+   "peak_ratio": 23.330931663513184,
+   "argmax_acc": 0.01614200370386243
+  },
+  "30": {
+   "mass_at_target": 0.033459899947047234,
+   "mean_allowed": 0.0317540317773819,
+   "addr_ratio": 1.0537213095214075,
+   "addr_ratio_all": 1.0707167983055115,
+   "peak_ratio": 30.61366558074951,
+   "argmax_acc": 0.03271484375
+  }
+ },
+ "addr_probe_final": {
+  "0": {
+   "mass_at_target": 0.09096842631697655,
+   "mean_allowed": 0.12682798504829407,
+   "addr_ratio": 0.7172583107926631,
+   "addr_ratio_all": 2.9109896421432495,
+   "peak_ratio": 16.406625747680664,
+   "argmax_acc": 0.09100341796875
+  },
+  "10": {
+   "mass_at_target": 0.14423640817403793,
+   "mean_allowed": 0.051342133432626724,
+   "addr_ratio": 2.809318556333677,
+   "addr_ratio_all": 4.615565061569214,
+   "peak_ratio": 21.372037887573242,
+   "argmax_acc": 0.14439808577299118
+  },
+  "15": {
+   "mass_at_target": 0.037995150312781334,
+   "mean_allowed": 0.04354507476091385,
+   "addr_ratio": 0.8725475962871894,
+   "addr_ratio_all": 1.2158448100090027,
+   "peak_ratio": 23.85397243499756,
+   "argmax_acc": 0.037971047684550285
+  },
+  "30": {
+   "mass_at_target": 0.006345164030790329,
+   "mean_allowed": 0.0317540317773819,
+   "addr_ratio": 0.19982231155005428,
+   "addr_ratio_all": 0.20304524898529053,
+   "peak_ratio": 31.30618953704834,
+   "argmax_acc": 0.00634765625
+  }
+ },
+ "runtime_s": 543.5
+}

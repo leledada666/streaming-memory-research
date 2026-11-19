@@ -1,0 +1,76 @@
+{
+ "config": {
+  "T": 32,
+  "B": 4,
+  "steps": 200,
+  "arms": "cross,gru128,fir16",
+  "conds": "pos",
+  "seeds": "0",
+  "device": "cpu",
+  "lr": 0.003,
+  "eval_per_bucket": 64,
+  "out": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\e4_smoke",
+  "tag": "smoke_pos"
+ },
+ "params": {
+  "cross": 46909,
+  "gru128": 50817,
+  "fir16": 43585
+ },
+ "runs": [
+  {
+   "arm": "cross",
+   "cond": "pos",
+   "seed": 0,
+   "params": 46909,
+   "eval": {
+    "buckets": {
+     "0-0": 1.0
+    },
+    "counts": {
+     "0-0": 64
+    },
+    "overall": 1.0,
+    "attn_mass_at_s": {
+     "0-0": 0.312
+    }
+   },
+   "zero_shot": {}
+  },
+  {
+   "arm": "gru128",
+   "cond": "pos",
+   "seed": 0,
+   "params": 50817,
+   "eval": {
+    "buckets": {
+     "0-0": 1.0
+    },
+    "counts": {
+     "0-0": 64
+    },
+    "overall": 1.0,
+    "attn_mass_at_s": null
+   },
+   "zero_shot": {}
+  },
+  {
+   "arm": "fir16",
+   "cond": "pos",
+   "seed": 0,
+   "params": 43585,
+   "eval": {
+    "buckets": {
+     "0-0": 1.0
+    },
+    "counts": {
+     "0-0": 64
+    },
+    "overall": 1.0,
+    "attn_mass_at_s": null
+   },
+   "zero_shot": {}
+  }
+ ],
+ "runtime_s": 14.9
+}

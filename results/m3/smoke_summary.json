@@ -1,0 +1,116 @@
+[
+ {
+  "arm": "bypass",
+  "lag": 10,
+  "T": 32,
+  "B": 4,
+  "rc": 0,
+  "trainable_params": 663305,
+  "result": {
+   "arm": "bypass",
+   "lag": 10,
+   "trainable_params": 663305,
+   "val_acc_best": 0.5078125,
+   "val_acc_best_step": 120,
+   "backbone_hash_unchanged": true,
+   "runtime_s": 50.8
+  },
+  "runtime_s": 53.9,
+  "log": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\m3_crossmem\\log_bypass_L10_B4_T32.txt"
+ },
+ {
+  "arm": "bypass",
+  "lag": 60,
+  "T": 96,
+  "B": 2,
+  "rc": 0,
+  "trainable_params": 663305,
+  "result": {
+   "arm": "bypass",
+   "lag": 60,
+   "trainable_params": 663305,
+   "val_acc_best": 0.5014467592592593,
+   "val_acc_best_step": 120,
+   "backbone_hash_unchanged": true,
+   "runtime_s": 55.8
+  },
+  "runtime_s": 58.7,
+  "log": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\m3_crossmem\\log_bypass_L60_B2_T96.txt"
+ },
+ {
+  "arm": "crossmem",
+  "lag": 10,
+  "T": 32,
+  "B": 4,
+  "rc": 0,
+  "trainable_params": 923913,
+  "result": {
+   "arm": "crossmem",
+   "lag": 10,
+   "trainable_params": 923913,
+   "val_acc_best": 0.5124289772727273,
+   "val_acc_best_step": 40,
+   "backbone_hash_unchanged": true,
+   "runtime_s": 43.1
+  },
+  "runtime_s": 45.8,
+  "log": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\m3_crossmem\\log_crossmem_L10_B4_T32.txt"
+ },
+ {
+  "arm": "crossmem",
+  "lag": 60,
+  "T": 96,
+  "B": 2,
+  "rc": 0,
+  "trainable_params": 923913,
+  "result": {
+   "arm": "crossmem",
+   "lag": 60,
+   "trainable_params": 923913,
+   "val_acc_best": 0.49855324074074076,
+   "val_acc_best_step": 120,
+   "backbone_hash_unchanged": true,
+   "runtime_s": 73.9
+  },
+  "runtime_s": 76.6,
+  "log": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\m3_crossmem\\log_crossmem_L60_B2_T96.txt"
+ },
+ {
+  "arm": "crossmem_slots",
+  "lag": 10,
+  "T": 32,
+  "B": 4,
+  "rc": 0,
+  "trainable_params": 480713,
+  "result": {
+   "arm": "crossmem_slots",
+   "lag": 10,
+   "trainable_params": 480713,
+   "val_acc_best": 0.5152698863636364,
+   "val_acc_best_step": 200,
+   "backbone_hash_unchanged": true,
+   "runtime_s": 62.1
+  },
+  "runtime_s": 65.0,
+  "log": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\m3_crossmem\\log_crossmem_slots_L10_B4_T32.txt"
+ },
+ {
+  "arm": "crossmem_slots",
+  "lag": 60,
+  "T": 96,
+  "B": 2,
+  "rc": 0,
+  "trainable_params": 480713,
+  "result": {
+   "arm": "crossmem_slots",
+   "lag": 60,
+   "trainable_params": 480713,
+   "val_acc_best": 0.5028935185185185,
+   "val_acc_best_step": 80,
+   "backbone_hash_unchanged": true,
+   "runtime_s": 113.2
+  },
+  "runtime_s": 117.7,
+  "log": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\m3_crossmem\\log_crossmem_slots_L60_B2_T96.txt"
+ }
+]

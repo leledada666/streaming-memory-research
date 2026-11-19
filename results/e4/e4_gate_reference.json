@@ -1,0 +1,163 @@
+{
+ "config": {
+  "T": 96,
+  "B": 32,
+  "steps": 4000,
+  "seeds": "0,1,2",
+  "per_bucket": 2048,
+  "device": "cpu",
+  "out": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\e4_gate"
+ },
+ "params": {
+  "fir16": 43585,
+  "gru128": 50817,
+  "cross": 47421,
+  "bypass": 59601,
+  "tap-oracle": 1,
+  "tap-fixed": 1
+ },
+ "causal": {
+  "fir16": {
+   "future_perturb_max_logit_diff": 0.0,
+   "pass": true
+  },
+  "gru128": {
+   "future_perturb_max_logit_diff": 0.0,
+   "pass": true
+  },
+  "cross": {
+   "future_perturb_max_logit_diff": 0.0,
+   "pass": true
+  },
+  "bypass": {
+   "future_perturb_max_logit_diff": 0.0,
+   "pass": true
+  },
+  "tap-oracle": {
+   "params": 1,
+   "future_perturb_max_logit_diff": 0.0,
+   "pass": true
+  },
+  "tap-fixed": {
+   "params": 1,
+   "future_perturb_max_logit_diff": 0.0,
+   "pass": true
+  }
+ },
+ "gate1_tap_oracle": {
+  "real": {
+   "buckets": {
+    "0-8": 1.0,
+    "9-16": 1.0,
+    "17-32": 1.0,
+    "33-64": 1.0
+   },
+   "overall": 1.0,
+   "n_per_bucket": 2048
+  },
+  "shuffle": {
+   "buckets": {
+    "0-8": 0.4902,
+    "9-16": 0.5215,
+    "17-32": 0.4844,
+    "33-64": 0.5142
+   },
+   "overall": 0.4839,
+   "n_per_bucket": 2048
+  },
+  "nomarker": {
+   "buckets": {
+    "0-8": 0.5024,
+    "9-16": 0.4912,
+    "17-32": 0.4951,
+    "33-64": 0.4971
+   },
+   "overall": 0.5083,
+   "n_per_bucket": 2048
+  },
+  "pass": true
+ },
+ "gate2_tap_fixed15": {
+  "real": {
+   "buckets": {
+    "0-8": 0.5005,
+    "9-16": 0.5435,
+    "17-32": 0.4907,
+    "33-64": 0.4878
+   },
+   "overall": 0.502,
+   "n_per_bucket": 2048
+  },
+  "pass": true
+ },
+ "gate3_fir16": {
+  "steps": 4000,
+  "runs": [
+   {
+    "seed": 0,
+    "params": 43585,
+    "eval": {
+     "buckets": {
+      "0-8": 0.9487,
+      "9-16": 0.9316,
+      "17-32": 0.5181,
+      "33-64": 0.521
+     },
+     "overall": 0.5806,
+     "n_per_bucket": 2048
+    }
+   },
+   {
+    "seed": 1,
+    "params": 43585,
+    "eval": {
+     "buckets": {
+      "0-8": 0.9404,
+      "9-16": 0.9351,
+      "17-32": 0.5054,
+      "33-64": 0.4971
+     },
+     "overall": 0.5762,
+     "n_per_bucket": 2048
+    }
+   },
+   {
+    "seed": 2,
+    "params": 43585,
+    "eval": {
+     "buckets": {
+      "0-8": 0.9277,
+      "9-16": 0.9185,
+      "17-32": 0.4775,
+      "33-64": 0.4912
+     },
+     "overall": 0.574,
+     "n_per_bucket": 2048
+    }
+   }
+  ],
+  "short_key": "0-8",
+  "long_key": "17-32",
+  "short_mean": 0.9389,
+  "long_max": 0.5181,
+  "long_pass": true,
+  "short_sanity_pass": true
+ },
+ "verdict": {
+  "gate_status": "pass",
+  "gate_pass": true,
+  "fir16_sane": true,
+  "causal_pass": true,
+  "reasons": [
+   "oracle overall=1.000 (need >=.99)",
+   "fixed15 overall=0.502 (need <=.60)",
+   "fir16 17-32 max=0.518 (need <=.55)",
+   "fir16 0-8 mean=0.939 (sanity >=.85)",
+   "causal all pass=True"
+  ],
+  "full_run_command": "python e4_addressing.py --T 96 --B 32 --steps 4000 --arms fir16,gru128,cross,bypass --conds real,shuffle,nomarker,pos --seeds 0,1,2 --device cuda --lr 3e-3 --eval_per_bucket 512 --out e4_full --tag full",
+  "full_run_launched": false,
+  "e4_final_verdict": "pending full T=96 run; gate does not test cross"
+ },
+ "runtime_s": 101.5
+}

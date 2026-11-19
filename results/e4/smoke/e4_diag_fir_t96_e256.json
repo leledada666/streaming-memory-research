@@ -1,0 +1,45 @@
+{
+ "config": {
+  "T": 96,
+  "B": 32,
+  "steps": 1500,
+  "arms": "fir16",
+  "conds": "real",
+  "seeds": "0",
+  "device": "cpu",
+  "lr": 0.003,
+  "eval_per_bucket": 256,
+  "balanced": 1,
+  "out": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\e4_smoke",
+  "tag": "diag_fir_t96_e256"
+ },
+ "params": {
+  "fir16": 43585
+ },
+ "runs": [
+  {
+   "arm": "fir16",
+   "cond": "real",
+   "seed": 0,
+   "params": 43585,
+   "eval": {
+    "buckets": {
+     "1-8": 1.0,
+     "9-16": 0.9258,
+     "17-32": 0.5469,
+     "33-64": 0.5156
+    },
+    "counts": {
+     "1-8": 256,
+     "9-16": 256,
+     "17-32": 256,
+     "33-64": 256
+    },
+    "overall": 0.6074,
+    "attn_mass_at_s": null
+   },
+   "zero_shot": {}
+  }
+ ],
+ "runtime_s": 15.7
+}

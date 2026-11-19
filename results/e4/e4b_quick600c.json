@@ -1,0 +1,58 @@
+{
+ "config": {
+  "T": 96,
+  "B": 16,
+  "steps": 600,
+  "eval_n": 256,
+  "seeds": [
+   0
+  ],
+  "K": [
+   8
+  ],
+  "arms": [
+   "cross",
+   "gru128"
+  ],
+  "device": "cpu",
+  "out": "e4b_quick600c.json"
+ },
+ "runs": [
+  {
+   "acc": 1.0,
+   "n": 256,
+   "multi_acc": 1.0,
+   "query_sensitivity": 1.0,
+   "pairwise_disagree": 0.820068359375,
+   "absent_maxprob": 0.1248784214258194,
+   "absent_hits_present_value": 1.0,
+   "absent_entropy": 2.7112534046173096,
+   "causal_maxdiff": 0.0,
+   "train_s": 22.021113395690918,
+   "params": 57025,
+   "final_loss": 1.0858968496322632,
+   "idshuffle_acc": 1.0,
+   "arm": "cross",
+   "K": 8,
+   "seed": 0
+  },
+  {
+   "acc": 0.06640625,
+   "n": 256,
+   "multi_acc": 0.05322265625,
+   "query_sensitivity": 1.0,
+   "pairwise_disagree": 0.5391845703125,
+   "absent_maxprob": 0.0676589235663414,
+   "absent_hits_present_value": 0.39453125,
+   "absent_entropy": 2.771928548812866,
+   "causal_maxdiff": 0.0,
+   "train_s": 23.551384449005127,
+   "params": 83344,
+   "final_loss": 2.784003973007202,
+   "idshuffle_acc": 0.0625,
+   "arm": "gru128",
+   "K": 8,
+   "seed": 0
+  }
+ ]
+}

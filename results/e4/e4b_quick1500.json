@@ -1,0 +1,39 @@
+{
+ "config": {
+  "T": 96,
+  "B": 16,
+  "steps": 1500,
+  "eval_n": 256,
+  "seeds": [
+   0
+  ],
+  "K": [
+   8
+  ],
+  "arms": [
+   "cross"
+  ],
+  "device": "cpu",
+  "out": "e4b_quick1500.json"
+ },
+ "runs": [
+  {
+   "acc": 1.0,
+   "n": 256,
+   "multi_acc": 1.0,
+   "query_sensitivity": 1.0,
+   "pairwise_disagree": 0.820068359375,
+   "absent_maxprob": 0.09017908573150635,
+   "absent_hits_present_value": 1.0,
+   "absent_entropy": 2.757719039916992,
+   "causal_maxdiff": 0.0,
+   "train_s": 60.988285779953,
+   "params": 57025,
+   "final_loss": 0.8742759227752686,
+   "idshuffle_acc": 1.0,
+   "arm": "cross",
+   "K": 8,
+   "seed": 0
+  }
+ ]
+}

@@ -1,0 +1,1 @@
+{"L": 15, "lr": 1, "attn_win": -1, "seed": 0, "val_best": 0.6317, "test_best": 0.5291, "test_last": 0.5258, "best_step": 4800, "steps": 5600, "pred": "short", "params": 333577, "s": 1346.3}

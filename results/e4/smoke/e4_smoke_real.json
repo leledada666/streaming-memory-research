@@ -1,0 +1,119 @@
+{
+ "config": {
+  "T": 32,
+  "B": 4,
+  "steps": 200,
+  "arms": "fir16,gru128,cross",
+  "conds": "real",
+  "seeds": "0",
+  "device": "cpu",
+  "lr": 0.003,
+  "eval_per_bucket": 64,
+  "out": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\e4_smoke",
+  "tag": "smoke_real"
+ },
+ "params": {
+  "fir16": 43585,
+  "gru128": 50817,
+  "cross": 46909
+ },
+ "runs": [
+  {
+   "arm": "fir16",
+   "cond": "real",
+   "seed": 0,
+   "params": 43585,
+   "eval": {
+    "buckets": {
+     "1-8": 0.5469,
+     "9-16": 0.5312,
+     "17-31": 0.4062
+    },
+    "counts": {
+     "1-8": 64,
+     "9-16": 64,
+     "17-31": 64
+    },
+    "overall": 0.5547,
+    "attn_mass_at_s": null
+   },
+   "zero_shot": {}
+  },
+  {
+   "arm": "gru128",
+   "cond": "real",
+   "seed": 0,
+   "params": 50817,
+   "eval": {
+    "buckets": {
+     "1-8": 0.5156,
+     "9-16": 0.5,
+     "17-31": 0.6094
+    },
+    "counts": {
+     "1-8": 64,
+     "9-16": 64,
+     "17-31": 64
+    },
+    "overall": 0.5078,
+    "attn_mass_at_s": null
+   },
+   "zero_shot": {}
+  },
+  {
+   "arm": "cross",
+   "cond": "real",
+   "seed": 0,
+   "params": 46909,
+   "eval": {
+    "buckets": {
+     "1-8": 0.5156,
+     "9-16": 0.4688,
+     "17-31": 0.5
+    },
+    "counts": {
+     "1-8": 64,
+     "9-16": 64,
+     "17-31": 64
+    },
+    "overall": 0.5,
+    "attn_mass_at_s": {
+     "1-8": 0.13,
+     "9-16": 0.13,
+     "17-31": 0.131
+    }
+   },
+   "zero_shot": {
+    "shuffle": {
+     "buckets": {
+      "1-8": 0.4688,
+      "9-16": 0.5312,
+      "17-31": 0.5156
+     },
+     "counts": {
+      "1-8": 64,
+      "9-16": 64,
+      "17-31": 64
+     },
+     "overall": 0.5156,
+     "attn_mass_at_s": null
+    },
+    "nomarker": {
+     "buckets": {
+      "1-8": 0.4688,
+      "9-16": 0.5469,
+      "17-31": 0.5
+     },
+     "counts": {
+      "1-8": 64,
+      "9-16": 64,
+      "17-31": 64
+     },
+     "overall": 0.5,
+     "attn_mass_at_s": null
+    }
+   }
+  }
+ ],
+ "runtime_s": 14.9
+}

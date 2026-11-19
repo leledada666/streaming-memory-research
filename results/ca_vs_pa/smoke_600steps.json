@@ -1,0 +1,282 @@
+{
+ "config": {
+  "T": 32,
+  "B": 4,
+  "steps": 600,
+  "eval_every": 100,
+  "lr": 0.001,
+  "device": "cpu",
+  "seeds": "0",
+  "only": "bypass_pos_L5,crossattn_pos_L5_pe,crossattn_pos_L5_nope",
+  "valB": 16,
+  "nval": 4,
+  "out": "smoke_600steps.json"
+ },
+ "T": 32,
+ "B": 4,
+ "steps": 600,
+ "results": [
+  {
+   "run": "bypass_pos_L5",
+   "arm": "bypass",
+   "task": "pos",
+   "pe": null,
+   "lag": 5,
+   "seed": 0,
+   "T": 32,
+   "B": 4,
+   "steps": 600,
+   "trainable_params": 794441,
+   "best_val_acc": 0.5191,
+   "best_step": 500,
+   "test_acc": 0.5058,
+   "causal_check": {
+    "t0": 16,
+    "max_abs_logit_diff_past": 0.0
+   },
+   "attn_visibility": null,
+   "curve": [
+    {
+     "step": 100,
+     "val_acc": 0.4948,
+     "loss": 0.6943,
+     "gates": [
+      0.122,
+      0.124,
+      0.123,
+      0.123,
+      0.122,
+      0.12,
+      0.118,
+      0.117
+     ]
+    },
+    {
+     "step": 200,
+     "val_acc": 0.4965,
+     "loss": 0.6907,
+     "gates": [
+      0.125,
+      0.133,
+      0.134,
+      0.131,
+      0.128,
+      0.125,
+      0.12,
+      0.118
+     ]
+    },
+    {
+     "step": 300,
+     "val_acc": 0.4902,
+     "loss": 0.6981,
+     "gates": [
+      0.128,
+      0.142,
+      0.146,
+      0.141,
+      0.137,
+      0.134,
+      0.124,
+      0.119
+     ]
+    },
+    {
+     "step": 400,
+     "val_acc": 0.4988,
+     "loss": 0.6925,
+     "gates": [
+      0.126,
+      0.139,
+      0.143,
+      0.139,
+      0.135,
+      0.133,
+      0.124,
+      0.119
+     ]
+    },
+    {
+     "step": 500,
+     "val_acc": 0.5191,
+     "loss": 0.6906,
+     "gates": [
+      0.126,
+      0.148,
+      0.154,
+      0.148,
+      0.143,
+      0.141,
+      0.127,
+      0.12
+     ]
+    },
+    {
+     "step": 600,
+     "val_acc": 0.5127,
+     "loss": 0.6912,
+     "gates": [
+      0.127,
+      0.149,
+      0.155,
+      0.149,
+      0.144,
+      0.141,
+      0.128,
+      0.12
+     ]
+    }
+   ],
+   "runtime_s": 170.8
+  },
+  {
+   "run": "crossattn_pos_L5_nope",
+   "arm": "crossattn",
+   "task": "pos",
+   "pe": false,
+   "lag": 5,
+   "seed": 0,
+   "T": 32,
+   "B": 4,
+   "steps": 600,
+   "trainable_params": 494913,
+   "best_val_acc": 0.5862,
+   "best_step": 400,
+   "test_acc": 0.5833,
+   "causal_check": {
+    "t0": 16,
+    "max_abs_logit_diff_past": 0.0,
+    "acc_orig": 0.579,
+    "acc_kv_c_shuffled": 0.44
+   },
+   "attn_visibility": {
+    "query_pos": 8,
+    "visible_keys": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "curve": [
+    {
+     "step": 100,
+     "val_acc": 0.5851,
+     "loss": 0.6652,
+     "gates": null
+    },
+    {
+     "step": 200,
+     "val_acc": 0.5851,
+     "loss": 0.6539,
+     "gates": null
+    },
+    {
+     "step": 300,
+     "val_acc": 0.5845,
+     "loss": 0.6585,
+     "gates": null
+    },
+    {
+     "step": 400,
+     "val_acc": 0.5862,
+     "loss": 0.6304,
+     "gates": null
+    },
+    {
+     "step": 500,
+     "val_acc": 0.5839,
+     "loss": 0.6489,
+     "gates": null
+    },
+    {
+     "step": 600,
+     "val_acc": 0.5862,
+     "loss": 0.6767,
+     "gates": null
+    }
+   ],
+   "runtime_s": 73.8
+  },
+  {
+   "run": "crossattn_pos_L5_pe",
+   "arm": "crossattn",
+   "task": "pos",
+   "pe": true,
+   "lag": 5,
+   "seed": 0,
+   "T": 32,
+   "B": 4,
+   "steps": 600,
+   "trainable_params": 511297,
+   "best_val_acc": 0.6991,
+   "best_step": 600,
+   "test_acc": 0.6852,
+   "causal_check": {
+    "t0": 16,
+    "max_abs_logit_diff_past": 0.0,
+    "acc_orig": 0.69,
+    "acc_kv_c_shuffled": 0.472
+   },
+   "attn_visibility": {
+    "query_pos": 8,
+    "visible_keys": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "curve": [
+    {
+     "step": 100,
+     "val_acc": 0.5856,
+     "loss": 0.6646,
+     "gates": null
+    },
+    {
+     "step": 200,
+     "val_acc": 0.5984,
+     "loss": 0.6538,
+     "gates": null
+    },
+    {
+     "step": 300,
+     "val_acc": 0.6036,
+     "loss": 0.648,
+     "gates": null
+    },
+    {
+     "step": 400,
+     "val_acc": 0.6186,
+     "loss": 0.618,
+     "gates": null
+    },
+    {
+     "step": 500,
+     "val_acc": 0.6279,
+     "loss": 0.5749,
+     "gates": null
+    },
+    {
+     "step": 600,
+     "val_acc": 0.6991,
+     "loss": 0.4858,
+     "gates": null
+    }
+   ],
+   "runtime_s": 82.5
+  }
+ ],
+ "lags": {}
+}

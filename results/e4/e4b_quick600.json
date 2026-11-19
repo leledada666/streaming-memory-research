@@ -1,0 +1,58 @@
+{
+ "config": {
+  "T": 96,
+  "B": 16,
+  "steps": 600,
+  "eval_n": 256,
+  "seeds": [
+   0
+  ],
+  "K": [
+   8
+  ],
+  "arms": [
+   "cross",
+   "gru128"
+  ],
+  "device": "cpu",
+  "out": "e4b_quick600.json"
+ },
+ "runs": [
+  {
+   "acc": 0.1875,
+   "n": 256,
+   "multi_acc": 0.15673828125,
+   "query_sensitivity": 0.09375,
+   "pairwise_disagree": 0.042724609375,
+   "absent_maxprob": 0.15097607672214508,
+   "absent_hits_present_value": 0.97265625,
+   "absent_entropy": 2.6909403800964355,
+   "causal_maxdiff": 0.0,
+   "train_s": 26.9359450340271,
+   "params": 81680,
+   "final_loss": 2.7582173347473145,
+   "idshuffle_acc": 0.1484375,
+   "arm": "cross",
+   "K": 8,
+   "seed": 0
+  },
+  {
+   "acc": 0.05078125,
+   "n": 256,
+   "multi_acc": 0.06787109375,
+   "query_sensitivity": 0.91796875,
+   "pairwise_disagree": 0.381591796875,
+   "absent_maxprob": 0.06733644008636475,
+   "absent_hits_present_value": 0.390625,
+   "absent_entropy": 2.7718214988708496,
+   "causal_maxdiff": 0.0,
+   "train_s": 23.694206476211548,
+   "params": 83216,
+   "final_loss": 2.774261713027954,
+   "idshuffle_acc": 0.05078125,
+   "arm": "gru128",
+   "K": 8,
+   "seed": 0
+  }
+ ]
+}

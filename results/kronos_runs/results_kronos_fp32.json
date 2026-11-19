@@ -1,0 +1,250 @@
+{
+ "part": "kronos",
+ "dtype": "fp32",
+ "reps": 3,
+ "steps": 2000,
+ "prime": 64,
+ "slice_bars": [
+  112608,
+  114671
+ ],
+ "split": [
+  92736,
+  19872,
+  19872
+ ],
+ "gpu_start": {
+  "nvidia_smi(utilization.gpu,temperature.gpu,memory.used,power.draw,clocks.sm)": "2 %, 52, 270 MiB, 8.84 W, 210 MHz",
+  "cs2_running": false,
+  "time": "2026-10-18 05:10:49"
+ },
+ "modes": {
+  "S": {
+   "latency_ms": {
+    "p50": 13.470049998431932,
+    "p95": 20.146440005191835,
+    "p99": 24.10615299872006,
+    "mean": 14.247152563960602,
+    "at_bar": {
+     "100": 12.948749994393438,
+     "500": 13.46814999851631,
+     "1000": 13.451600003463682,
+     "2000": 13.681700002052821
+    },
+    "per_rep_p95": [
+     21.153290005167946,
+     20.146440005191835,
+     19.780899991019396
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 3,
+   "truncation": [
+    {},
+    {},
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_ref": {
+    "max_abs": 3.5762786865234375e-07,
+    "mean_abs": 2.4348946681129747e-08,
+    "mean_kl": 2.1244161420577695e-11,
+    "max_kl": 1.7136337384461904e-07,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.0
+   }
+  },
+  "R": {
+   "latency_ms": {
+    "p50": 36.834800004726276,
+    "p95": 51.947460003430024,
+    "p99": 56.33289200719447,
+    "mean": 38.43955612389423,
+    "at_bar": {
+     "100": 28.27110000362154,
+     "500": 35.8539000080782,
+     "1000": null,
+     "2000": null
+    },
+    "per_rep_p95": [
+     51.947460003430024
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {
+     "truncated_at_step": 793,
+     "reason": "reserved VRAM 6.08 GB > cap"
+    }
+   ],
+   "extra": {
+    "final_context_positions": 36064,
+    "n_steps_done": 793
+   },
+   "cons_vs_S": {
+    "max_abs": 0.45379213988780975,
+    "mean_abs": 0.18444969821014426,
+    "mean_kl": 0.21332076243972975,
+    "max_kl": 0.4751603013157331,
+    "n_steps_compared": 793,
+    "argmax_disagree": 0.4854981084489281
+   }
+  },
+  "R0": {
+   "latency_ms": {
+    "p50": 15.959949996613432,
+    "p95": 28.009554999152897,
+    "p99": 30.55109100387199,
+    "mean": 17.658432051375247,
+    "at_bar": {
+     "100": 12.448849993234035,
+     "500": 12.636200000997633,
+     "1000": 13.931749999755993,
+     "2000": 28.945899997779634
+    },
+    "per_rep_p95": [
+     27.894684996135766,
+     28.009554999152897,
+     28.61362499752431
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 3,
+   "truncation": [
+    {},
+    {},
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_ref": {
+    "max_abs": 2.980232238769531e-07,
+    "mean_abs": 2.4134831013119157e-08,
+    "mean_kl": 5.824496361026271e-10,
+    "max_kl": 1.6391279488999347e-07,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.0
+   }
+  },
+  "W64": {
+   "latency_ms": {
+    "p50": 12.482800004363526,
+    "p95": 18.572015001700493,
+    "p99": 24.69162299807067,
+    "mean": 13.403072000111047,
+    "at_bar": {
+     "100": 12.989850001758896,
+     "500": 12.130750001233537,
+     "1000": 12.881650000053924,
+     "2000": 12.000050002825446
+    },
+    "per_rep_p95": [
+     18.572015001700493
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_S": {
+    "max_abs": 0.3371357023715973,
+    "mean_abs": 0.02486156188146015,
+    "mean_kl": 0.008383871276281799,
+    "max_kl": 0.2509073684020705,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.054
+   }
+  },
+  "W128": {
+   "latency_ms": {
+    "p50": 13.505449998774566,
+    "p95": 19.949319998704595,
+    "p99": 24.14835800154833,
+    "mean": 14.421764923213349,
+    "at_bar": {
+     "100": 11.900199999217875,
+     "500": 16.873099993972573,
+     "1000": 13.128949998645112,
+     "2000": 12.587949997396208
+    },
+    "per_rep_p95": [
+     19.949319998704595
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_S": {
+    "max_abs": 0.3212915360927582,
+    "mean_abs": 0.021770640644788727,
+    "mean_kl": 0.007155337743294945,
+    "max_kl": 0.2256238279832885,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.0445
+   }
+  },
+  "W256": {
+   "latency_ms": {
+    "p50": 14.142500003799796,
+    "p95": 21.706350000749808,
+    "p99": 25.54846200000611,
+    "mean": 15.175938974403275,
+    "at_bar": {
+     "100": 15.77424999413779,
+     "500": 14.342349997605197,
+     "1000": 17.844249996414874,
+     "2000": 13.396900001680478
+    },
+    "per_rep_p95": [
+     21.706350000749808
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_S": {
+    "max_abs": 0.3157624304294586,
+    "mean_abs": 0.025024061991968362,
+    "mean_kl": 0.008743111143965226,
+    "max_kl": 0.2155325968115858,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.0505
+   }
+  }
+ },
+ "head": "E:\\rwkv7\\runs\\kronos_rl_1m_direct_bn3m_pertrade\\seed0\\best.pt",
+ "R_definition": "per round: one cached forward of [new bar (bypass on) + 16 fixed extra positions (s1=1..16, s2=0, stamp of the bar, no bypass)], DIRECT-head readout at the last extra position (m = current bar), argmax; then one cached forward of 1 write-back position encoding the action (s1=100+action, s2=0, no bypass). Context grows by 18 positions per bar. Kronos has no text, so this emulates prompt+output overhead.",
+ "R0_definition": "no cache: full causal forward over all bars [0..t] every step, readout at last position",
+ "W_definition": "no reusable cache (window start shifts): full forward over the last N bars every step, readout last",
+ "reference": "one full causal forward (no cache) over all 2064 positions, same bypass content; readout at each decision position",
+ "ref_action_freq": [
+  17,
+  1478,
+  505,
+  0
+ ],
+ "gpu_end": {
+  "nvidia_smi(utilization.gpu,temperature.gpu,memory.used,power.draw,clocks.sm)": "34 %, 61, 616 MiB, 26.07 W, 1710 MHz",
+  "cs2_running": false,
+  "time": "2026-10-18 05:16:00"
+ },
+ "wall_s": 312.2
+}

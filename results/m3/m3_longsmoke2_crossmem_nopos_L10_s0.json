@@ -1,0 +1,124 @@
+{
+ "arm": "crossmem_nopos",
+ "lag": 10,
+ "seed": 0,
+ "B": 8,
+ "T": 32,
+ "steps": 400,
+ "lr": 0.001,
+ "device": "cpu",
+ "use_head_m": true,
+ "trainable_params": 923913,
+ "param_counts": {
+  "enc_head": 264192,
+  "pi": 131329,
+  "cm": 528384,
+  "gate": 8,
+  "trainable_total": 923913
+ },
+ "val_acc_best": 0.5102982954545454,
+ "val_acc_best_step": 200,
+ "val_acc_final": 0.495,
+ "test_acc": 0.4962121212121212,
+ "curve": [
+  {
+   "step": 100,
+   "val_acc": 0.506,
+   "loss": 0.6923
+  },
+  {
+   "step": 200,
+   "val_acc": 0.5103,
+   "loss": 0.6945
+  },
+  {
+   "step": 300,
+   "val_acc": 0.5103,
+   "loss": 0.6931
+  },
+  {
+   "step": 400,
+   "val_acc": 0.495,
+   "loss": 0.695
+  }
+ ],
+ "causal_max_leak": 0.0,
+ "backbone_hash_unchanged": true,
+ "backbone_grad_tensors": 0,
+ "n_opt_params": 17,
+ "n_val_targets": 2816,
+ "n_test_targets": 4224,
+ "attn_diag": {
+  "diag_mass": 0.12801531702280045,
+  "argmax_acc": 0.12811279296875
+ },
+ "addr_probe_init": {
+  "0": {
+   "mass_at_target": 0.12577982246875763,
+   "mean_allowed": 0.12682798504829407,
+   "addr_ratio": 0.9917355575811024,
+   "addr_ratio_all": 4.024954319000244,
+   "peak_ratio": 15.702353477478027,
+   "argmax_acc": 0.12615966796875
+  },
+  "10": {
+   "mass_at_target": 0.05084714852273464,
+   "mean_allowed": 0.051342133432626724,
+   "addr_ratio": 0.9903590895664353,
+   "addr_ratio_all": 1.6271087527275085,
+   "peak_ratio": 20.414762496948242,
+   "argmax_acc": 0.051047585904598236
+  },
+  "15": {
+   "mass_at_target": 0.04473404586315155,
+   "mean_allowed": 0.04354507476091385,
+   "addr_ratio": 1.0273043761841218,
+   "addr_ratio_all": 1.4314894676208496,
+   "peak_ratio": 22.773162841796875,
+   "argmax_acc": 0.044289981946349144
+  },
+  "30": {
+   "mass_at_target": 0.02999784704297781,
+   "mean_allowed": 0.0317540317773819,
+   "addr_ratio": 0.9446941180031507,
+   "addr_ratio_all": 0.9599311053752899,
+   "peak_ratio": 29.845504760742188,
+   "argmax_acc": 0.0302734375
+  }
+ },
+ "addr_probe_final": {
+  "0": {
+   "mass_at_target": 0.12801531702280045,
+   "mean_allowed": 0.12682798504829407,
+   "addr_ratio": 1.0093617506739876,
+   "addr_ratio_all": 4.096490144729614,
+   "peak_ratio": 16.383718490600586,
+   "argmax_acc": 0.12811279296875
+  },
+  "10": {
+   "mass_at_target": 0.050080327317118645,
+   "mean_allowed": 0.051342133432626724,
+   "addr_ratio": 0.9754235745352524,
+   "addr_ratio_all": 1.6025704741477966,
+   "peak_ratio": 21.33858013153076,
+   "argmax_acc": 0.050026632845401764
+  },
+  "15": {
+   "mass_at_target": 0.043914880603551865,
+   "mean_allowed": 0.04354507476091385,
+   "addr_ratio": 1.0084924838151834,
+   "addr_ratio_all": 1.4052761793136597,
+   "peak_ratio": 23.8172550201416,
+   "argmax_acc": 0.0439453125
+  },
+  "30": {
+   "mass_at_target": 0.03083270974457264,
+   "mean_allowed": 0.0317540317773819,
+   "addr_ratio": 0.970985667606924,
+   "addr_ratio_all": 0.9866467118263245,
+   "peak_ratio": 31.26633644104004,
+   "argmax_acc": 0.03076171875
+  }
+ },
+ "runtime_s": 147.2
+}

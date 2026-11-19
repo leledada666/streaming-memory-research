@@ -1,0 +1,221 @@
+{
+ "part": "rwkv",
+ "dtype": "fp32",
+ "reps": 3,
+ "steps": 2000,
+ "prime": 64,
+ "slice_bars": [
+  112608,
+  114671
+ ],
+ "split": [
+  92736,
+  19872,
+  19872
+ ],
+ "gpu_start": {
+  "nvidia_smi(utilization.gpu,temperature.gpu,memory.used,power.draw,clocks.sm)": "2 %, 57, 276 MiB, 9.36 W, 615 MHz",
+  "cs2_running": false,
+  "time": "2026-10-18 05:16:03"
+ },
+ "modes": {
+  "S": {
+   "latency_ms": {
+    "p50": 61.517849993833806,
+    "p95": 78.82349499777774,
+    "p99": 88.76492100316682,
+    "mean": 63.25983933326102,
+    "at_bar": {
+     "100": 55.85425000026589,
+     "500": 57.095900003332645,
+     "1000": 64.77840000297874,
+     "2000": 62.938549992395565
+    },
+    "per_rep_p95": [
+     78.32412999632652,
+     81.17650999483885,
+     78.82349499777774
+    ]
+   },
+   "rep_prob_maxdiff": 4.76837158203125e-07,
+   "n_reps": 3,
+   "truncation": [
+    {},
+    {},
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_ref": {
+    "max_abs": 0.001130431890487671,
+    "mean_abs": 0.00010126095513502756,
+    "mean_kl": 1.0392100787667805e-07,
+    "max_kl": 4.082170352857125e-06,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.0
+   }
+  },
+  "R": {
+   "latency_ms": {
+    "p50": 259.8098000016762,
+    "p95": 299.0519500017399,
+    "p99": 317.66959000233317,
+    "mean": 260.95393777260705,
+    "at_bar": {
+     "100": 236.23670000233687,
+     "500": 255.80945000547217,
+     "1000": null,
+     "2000": null
+    },
+    "per_rep_p95": [
+     299.0519500017399
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {
+     "truncated_at_step": 921,
+     "reason": "time 240s > cap"
+    }
+   ],
+   "extra": {
+    "sample_generated_text": [
+     " The new 1",
+     " The new 1",
+     " The new 1",
+     " The new 1",
+     " The new 1"
+    ],
+    "prompt_tokens": 30,
+    "out_tokens": 3,
+    "n_steps_done": 921
+   },
+   "cons_vs_S": {
+    "max_abs": 0.16522281616926193,
+    "mean_abs": 0.043779111050347076,
+    "mean_kl": 0.015083786235244506,
+    "max_kl": 0.08360445704314545,
+    "n_steps_compared": 921,
+    "argmax_disagree": 0.13789359391965256
+   }
+  },
+  "W64": {
+   "latency_ms": {
+    "p50": 88.7720500031719,
+    "p95": 111.46181500153033,
+    "p99": 124.13354400036042,
+    "mean": 90.68983651273764,
+    "at_bar": {
+     "100": 86.17700000468176,
+     "500": 87.80814999772701,
+     "1000": 98.58239999448415,
+     "2000": 94.87734999856912
+    },
+    "per_rep_p95": [
+     111.46181500153033
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_S": {
+    "max_abs": 0.15491999685764313,
+    "mean_abs": 0.025710881867756444,
+    "mean_kl": 0.006631289434095201,
+    "max_kl": 0.07686731720525661,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.109
+   }
+  },
+  "W128": {
+   "latency_ms": {
+    "p50": 92.06044999882579,
+    "p95": 113.57448500348255,
+    "p99": 122.15969100128859,
+    "mean": 93.60380507676521,
+    "at_bar": {
+     "100": 95.0412000020151,
+     "500": 96.87254999880679,
+     "1000": 104.87740000098711,
+     "2000": 90.57970000139903
+    },
+    "per_rep_p95": [
+     113.57448500348255
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_S": {
+    "max_abs": 0.1408376395702362,
+    "mean_abs": 0.02243792706976334,
+    "mean_kl": 0.005380897447307414,
+    "max_kl": 0.06900497823483635,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.0935
+   }
+  },
+  "W256": {
+   "latency_ms": {
+    "p50": 95.4503500033752,
+    "p95": 118.66469500018866,
+    "p99": 130.2449510009319,
+    "mean": 96.884496666697,
+    "at_bar": {
+     "100": 98.5873499957961,
+     "500": 99.55130000162171,
+     "1000": 103.10130000289064,
+     "2000": 89.38730000227224
+    },
+    "per_rep_p95": [
+     118.66469500018866
+    ]
+   },
+   "rep_prob_maxdiff": 0.0,
+   "n_reps": 1,
+   "truncation": [
+    {}
+   ],
+   "extra": {
+    "n_steps_done": 2000
+   },
+   "cons_vs_S": {
+    "max_abs": 0.1329718381166458,
+    "mean_abs": 0.018632231696198383,
+    "mean_kl": 0.004020960444885988,
+    "max_kl": 0.05241488705646073,
+    "n_steps_compared": 2000,
+    "argmax_disagree": 0.0845
+   }
+  }
+ },
+ "head": "E:\\rwkv7\\runs\\rl_kline_1m_pnl\\best.pt",
+ "R_definition": "per round: one cached forward of [new bar embedding (BOS emb + bypass) + 30 real text tokens of a fixed decision prompt '\\n\\nUser: A new 1-minute bar was injected. Decide the next action: long, short, hold or close.\\n\\nAssistant:'], policy-head readout at the last prompt token, argmax; then greedy-decode 3 text tokens with the LM head, each fed back through the cached recurrent state (so the state carries bar+prompt+output). 4 model calls per round; 34 new positions per bar.",
+ "W_definition": "recurrent state cannot drop old bars: re-run from zero state over the last N bars every step (no cache), readout last",
+ "reference": "one full forward (no cache, FLA chunk kernel since len>=64) over all 2064 bar embeddings; readout at each decision position",
+ "kernel_note": "FLA RWKV7: seq_len>=64 -> chunk_rwkv7, else fused recurrent. S steps use recurrent; reference/W/prime use chunk.",
+ "ref_action_freq": [
+  1738,
+  0,
+  262,
+  0
+ ],
+ "gpu_end": {
+  "nvidia_smi(utilization.gpu,temperature.gpu,memory.used,power.draw,clocks.sm)": "32 %, 68, 2176 MiB, 48.75 W, 2385 MHz",
+  "cs2_running": false,
+  "time": "2026-10-18 05:36:30"
+ },
+ "wall_s": 1227.7
+}

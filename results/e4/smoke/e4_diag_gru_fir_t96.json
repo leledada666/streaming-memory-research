@@ -1,0 +1,68 @@
+{
+ "config": {
+  "T": 96,
+  "B": 32,
+  "steps": 1500,
+  "arms": "gru128,fir16",
+  "conds": "real",
+  "seeds": "0",
+  "device": "cpu",
+  "lr": 0.003,
+  "eval_per_bucket": 64,
+  "out": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\e4_smoke",
+  "tag": "diag_gru_fir_t96"
+ },
+ "params": {
+  "gru128": 50817,
+  "fir16": 43585
+ },
+ "runs": [
+  {
+   "arm": "gru128",
+   "cond": "real",
+   "seed": 0,
+   "params": 50817,
+   "eval": {
+    "buckets": {
+     "1-8": 1.0,
+     "9-16": 1.0,
+     "17-32": 1.0,
+     "33-64": 1.0
+    },
+    "counts": {
+     "1-8": 64,
+     "9-16": 64,
+     "17-32": 64,
+     "33-64": 64
+    },
+    "overall": 1.0,
+    "attn_mass_at_s": null
+   },
+   "zero_shot": {}
+  },
+  {
+   "arm": "fir16",
+   "cond": "real",
+   "seed": 0,
+   "params": 43585,
+   "eval": {
+    "buckets": {
+     "1-8": 0.5469,
+     "9-16": 0.625,
+     "17-32": 0.5781,
+     "33-64": 0.5156
+    },
+    "counts": {
+     "1-8": 64,
+     "9-16": 64,
+     "17-32": 64,
+     "33-64": 64
+    },
+    "overall": 0.5234,
+    "attn_mass_at_s": null
+   },
+   "zero_shot": {}
+  }
+ ],
+ "runtime_s": 126.5
+}

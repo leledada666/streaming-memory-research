@@ -1,0 +1,85 @@
+{
+ "config": {
+  "T": 96,
+  "B": 16,
+  "steps": 1000,
+  "eval_n": 512,
+  "seeds": [
+   0
+  ],
+  "K": [
+   1,
+   4,
+   8
+  ],
+  "arms": [
+   "cross",
+   "gru128",
+   "fir16",
+   "tap"
+  ],
+  "device": "cpu",
+  "out": "e4b_results.json"
+ },
+ "runs": [
+  {
+   "acc": 1.0,
+   "n": 512,
+   "absent_maxprob": 0.1053691878914833,
+   "absent_hits_present_value": 1.0,
+   "absent_entropy": 2.7574141025543213,
+   "causal_maxdiff": 0.0,
+   "train_s": 46.59986853599548,
+   "params": 57025,
+   "final_loss": 0.8775158524513245,
+   "idshuffle_acc": 1.0,
+   "arm": "cross",
+   "K": 1,
+   "seed": 0
+  },
+  {
+   "acc": 1.0,
+   "n": 512,
+   "absent_maxprob": 0.5003398656845093,
+   "absent_hits_present_value": 1.0,
+   "absent_entropy": 1.9429739713668823,
+   "causal_maxdiff": 0.0,
+   "train_s": 35.5924289226532,
+   "params": 83344,
+   "final_loss": 1.1530227661132812,
+   "idshuffle_acc": 1.0,
+   "arm": "gru128",
+   "K": 1,
+   "seed": 0
+  },
+  {
+   "acc": 0.439453125,
+   "n": 512,
+   "absent_maxprob": 0.29513442516326904,
+   "absent_hits_present_value": 0.453125,
+   "absent_entropy": 2.31968092918396,
+   "causal_maxdiff": 0.0,
+   "train_s": 2.839944839477539,
+   "params": 143888,
+   "final_loss": 2.4370765686035156,
+   "idshuffle_acc": 0.439453125,
+   "arm": "fir16",
+   "K": 1,
+   "seed": 0
+  },
+  {
+   "acc": 1.0,
+   "n": 512,
+   "absent_maxprob": 0.0625,
+   "absent_hits_present_value": 0.0859375,
+   "absent_entropy": 2.7725889682769775,
+   "causal_maxdiff": 0.0,
+   "params": 0,
+   "train_s": 0.0,
+   "idshuffle_acc": 1.0,
+   "arm": "tap",
+   "K": 1,
+   "seed": 0
+  }
+ ]
+}

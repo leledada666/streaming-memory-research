@@ -1,0 +1,59 @@
+{
+ "variant": "crossattn",
+ "S": null,
+ "bits": 1,
+ "T": 32,
+ "batch": 2,
+ "steps": 200,
+ "seed": 0,
+ "device": "cpu",
+ "train_lags": [
+  0
+ ],
+ "test_lags": [
+  0
+ ],
+ "trainable_params": 535625,
+ "best_val_acc": 0.998779296875,
+ "best_step": 200,
+ "acc": {
+  "0": 0.9993896484375
+ },
+ "controls": {
+  "randcue": {
+   "0": 0.526611328125
+  },
+  "shuffle": {
+   "0": 0.5181884765625
+  },
+  "nocue": {
+   "0": 0.9993896484375
+  }
+ },
+ "causal_max_abs": 0.0,
+ "future_sensitivity": 76.71769714355469,
+ "target_audit_max_abs": 0.0,
+ "runtime_s": 33.1,
+ "curve": [
+  {
+   "step": 50,
+   "val_acc": 0.8564453125,
+   "loss": 0.3489358425140381
+  },
+  {
+   "step": 100,
+   "val_acc": 0.865966796875,
+   "loss": 0.16533134877681732
+  },
+  {
+   "step": 150,
+   "val_acc": 0.928955078125,
+   "loss": 0.011134743690490723
+  },
+  {
+   "step": 200,
+   "val_acc": 0.998779296875,
+   "loss": 0.003405905794352293
+  }
+ ]
+}

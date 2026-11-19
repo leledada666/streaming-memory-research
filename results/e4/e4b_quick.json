@@ -1,0 +1,95 @@
+{
+ "config": {
+  "T": 96,
+  "B": 16,
+  "steps": 120,
+  "eval_n": 128,
+  "seeds": [
+   0
+  ],
+  "K": [
+   8
+  ],
+  "arms": [
+   "cross",
+   "gru128",
+   "fir16",
+   "tap"
+  ],
+  "device": "cpu",
+  "out": "e4b_quick.json"
+ },
+ "runs": [
+  {
+   "acc": 0.09375,
+   "n": 128,
+   "multi_acc": 0.11328125,
+   "query_sensitivity": 0.7578125,
+   "pairwise_disagree": 0.38330078125,
+   "absent_maxprob": 0.07765990495681763,
+   "absent_hits_present_value": 0.6796875,
+   "absent_entropy": 2.765052080154419,
+   "causal_maxdiff": 0.0,
+   "train_s": 4.1500022411346436,
+   "params": 81680,
+   "final_loss": 2.750361680984497,
+   "idshuffle_acc": 0.109375,
+   "arm": "cross",
+   "K": 8,
+   "seed": 0
+  },
+  {
+   "acc": 0.046875,
+   "n": 128,
+   "multi_acc": 0.06640625,
+   "query_sensitivity": 0.9921875,
+   "pairwise_disagree": 0.58935546875,
+   "absent_maxprob": 0.06776482611894608,
+   "absent_hits_present_value": 0.4140625,
+   "absent_entropy": 2.7714998722076416,
+   "causal_maxdiff": 0.0,
+   "train_s": 4.350288152694702,
+   "params": 83216,
+   "final_loss": 2.761620283126831,
+   "idshuffle_acc": 0.0859375,
+   "arm": "gru128",
+   "K": 8,
+   "seed": 0
+  },
+  {
+   "acc": 0.0625,
+   "n": 128,
+   "multi_acc": 0.068359375,
+   "query_sensitivity": 0.7265625,
+   "pairwise_disagree": 0.35791015625,
+   "absent_maxprob": 0.07123704254627228,
+   "absent_hits_present_value": 0.515625,
+   "absent_entropy": 2.7697033882141113,
+   "causal_maxdiff": 0.0,
+   "train_s": 0.3384072780609131,
+   "params": 143632,
+   "final_loss": 2.758725643157959,
+   "idshuffle_acc": 0.0703125,
+   "arm": "fir16",
+   "K": 8,
+   "seed": 0
+  },
+  {
+   "acc": 1.0,
+   "n": 128,
+   "multi_acc": 1.0,
+   "query_sensitivity": 1.0,
+   "pairwise_disagree": 0.81884765625,
+   "absent_maxprob": 0.0625,
+   "absent_hits_present_value": 0.4296875,
+   "absent_entropy": 2.7725887298583984,
+   "causal_maxdiff": 0.0,
+   "params": 0,
+   "train_s": 0.0,
+   "idshuffle_acc": 1.0,
+   "arm": "tap",
+   "K": 8,
+   "seed": 0
+  }
+ ]
+}

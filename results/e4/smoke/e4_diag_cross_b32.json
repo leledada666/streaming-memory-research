@@ -1,0 +1,75 @@
+{
+ "config": {
+  "T": 32,
+  "B": 32,
+  "steps": 1500,
+  "arms": "cross",
+  "conds": "real",
+  "seeds": "0",
+  "device": "cpu",
+  "lr": 0.003,
+  "eval_per_bucket": 64,
+  "out": "C:\\Users\\lele\\AppData\\Local\\Temp\\opencode\\e4_smoke",
+  "tag": "diag_cross_b32"
+ },
+ "params": {
+  "cross": 46909
+ },
+ "runs": [
+  {
+   "arm": "cross",
+   "cond": "real",
+   "seed": 0,
+   "params": 46909,
+   "eval": {
+    "buckets": {
+     "1-8": 1.0,
+     "9-16": 1.0,
+     "17-31": 1.0
+    },
+    "counts": {
+     "1-8": 64,
+     "9-16": 64,
+     "17-31": 64
+    },
+    "overall": 1.0,
+    "attn_mass_at_s": {
+     "1-8": 3.893,
+     "9-16": 3.87,
+     "17-31": 3.877
+    }
+   },
+   "zero_shot": {
+    "shuffle": {
+     "buckets": {
+      "1-8": 0.4688,
+      "9-16": 0.4844,
+      "17-31": 0.5312
+     },
+     "counts": {
+      "1-8": 64,
+      "9-16": 64,
+      "17-31": 64
+     },
+     "overall": 0.5234,
+     "attn_mass_at_s": null
+    },
+    "nomarker": {
+     "buckets": {
+      "1-8": 0.4688,
+      "9-16": 0.5469,
+      "17-31": 0.5
+     },
+     "counts": {
+      "1-8": 64,
+      "9-16": 64,
+      "17-31": 64
+     },
+     "overall": 0.5,
+     "attn_mass_at_s": null
+    }
+   }
+  }
+ ],
+ "runtime_s": 71.4
+}

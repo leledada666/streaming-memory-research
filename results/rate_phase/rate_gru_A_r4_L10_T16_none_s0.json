@@ -1,0 +1,41 @@
+{
+ "arm": "gru",
+ "task": "A",
+ "r": 4,
+ "lag": 10,
+ "T": 16,
+ "B": 4,
+ "control": "none",
+ "seed": 0,
+ "read_len_obs": 40,
+ "seq_bars": 16,
+ "trainable_params": 592137,
+ "val_acc": 0.5356,
+ "test_acc": 0.5136,
+ "base_majority": 0.5136,
+ "n_test_targets": 479,
+ "best_step": 10,
+ "steps_run": 20,
+ "stop_reason": "cap",
+ "ms_step_train": 211.9,
+ "ms_step_fwd": 62.5,
+ "causal": {
+  "past_future_perturb_maxdiff": 0.0,
+  "current_bar_self_maxdiff": 0.00021345168352127075,
+  "bar_t0_effect_at_t0_plus_L": 0.0
+ },
+ "data_label_ok": true,
+ "curve": [
+  {
+   "step": 10,
+   "val_acc": 0.5355648535564853,
+   "loss": 0.756737470626831
+  },
+  {
+   "step": 20,
+   "val_acc": 0.5355648535564853,
+   "loss": 0.7272632122039795
+  }
+ ],
+ "runtime_s": 10.7
+}

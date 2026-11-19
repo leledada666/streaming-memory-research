@@ -1,0 +1,818 @@
+[
+ {
+  "arm": "bypass",
+  "L": 0,
+  "params": 399113,
+  "val": 0.709,
+  "test": 0.637,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.094,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.739,
+    "addr_ratio_all": 2.998,
+    "peak_ratio": 5.109,
+    "argmax_acc": 0.066
+   },
+   "10": {
+    "mass_at_target": 0.04,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.772,
+    "addr_ratio_all": 1.269,
+    "peak_ratio": 6.43,
+    "argmax_acc": 0.039
+   },
+   "15": {
+    "mass_at_target": 0.029,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.666,
+    "addr_ratio_all": 0.928,
+    "peak_ratio": 7.11,
+    "argmax_acc": 0.023
+   },
+   "30": {
+    "mass_at_target": 0.046,
+    "mean_allowed": 0.032,
+    "addr_ratio": 1.439,
+    "addr_ratio_all": 1.462,
+    "peak_ratio": 9.09,
+    "argmax_acc": 0.067
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.094,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.738,
+    "addr_ratio_all": 2.997,
+    "peak_ratio": 5.127,
+    "argmax_acc": 0.066
+   },
+   "10": {
+    "mass_at_target": 0.04,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.773,
+    "addr_ratio_all": 1.27,
+    "peak_ratio": 6.456,
+    "argmax_acc": 0.039
+   },
+   "15": {
+    "mass_at_target": 0.029,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.665,
+    "addr_ratio_all": 0.927,
+    "peak_ratio": 7.138,
+    "argmax_acc": 0.023
+   },
+   "30": {
+    "mass_at_target": 0.046,
+    "mean_allowed": 0.032,
+    "addr_ratio": 1.458,
+    "addr_ratio_all": 1.482,
+    "peak_ratio": 9.135,
+    "argmax_acc": 0.065
+   }
+  }
+ },
+ {
+  "arm": "bypass",
+  "L": 10,
+  "params": 663305,
+  "val": 0.505,
+  "test": 0.496,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.094,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.739,
+    "addr_ratio_all": 2.998,
+    "peak_ratio": 5.109,
+    "argmax_acc": 0.066
+   },
+   "10": {
+    "mass_at_target": 0.04,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.772,
+    "addr_ratio_all": 1.269,
+    "peak_ratio": 6.431,
+    "argmax_acc": 0.039
+   },
+   "15": {
+    "mass_at_target": 0.029,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.666,
+    "addr_ratio_all": 0.928,
+    "peak_ratio": 7.111,
+    "argmax_acc": 0.023
+   },
+   "30": {
+    "mass_at_target": 0.046,
+    "mean_allowed": 0.032,
+    "addr_ratio": 1.439,
+    "addr_ratio_all": 1.463,
+    "peak_ratio": 9.091,
+    "argmax_acc": 0.067
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.094,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.739,
+    "addr_ratio_all": 2.997,
+    "peak_ratio": 5.106,
+    "argmax_acc": 0.066
+   },
+   "10": {
+    "mass_at_target": 0.04,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.772,
+    "addr_ratio_all": 1.268,
+    "peak_ratio": 6.427,
+    "argmax_acc": 0.04
+   },
+   "15": {
+    "mass_at_target": 0.029,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.664,
+    "addr_ratio_all": 0.926,
+    "peak_ratio": 7.107,
+    "argmax_acc": 0.023
+   },
+   "30": {
+    "mass_at_target": 0.046,
+    "mean_allowed": 0.032,
+    "addr_ratio": 1.441,
+    "addr_ratio_all": 1.464,
+    "peak_ratio": 9.091,
+    "argmax_acc": 0.067
+   }
+  }
+ },
+ {
+  "arm": "bypass",
+  "L": 60,
+  "params": 663305,
+  "val": 0.502,
+  "test": 0.492,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.048,
+    "mean_allowed": 0.054,
+    "addr_ratio": 0.889,
+    "addr_ratio_all": 4.578,
+    "peak_ratio": 12.959,
+    "argmax_acc": 0.033
+   },
+   "10": {
+    "mass_at_target": 0.024,
+    "mean_allowed": 0.026,
+    "addr_ratio": 0.945,
+    "addr_ratio_all": 2.339,
+    "peak_ratio": 14.208,
+    "argmax_acc": 0.019
+   },
+   "15": {
+    "mass_at_target": 0.014,
+    "mean_allowed": 0.023,
+    "addr_ratio": 0.62,
+    "addr_ratio_all": 1.344,
+    "peak_ratio": 14.826,
+    "argmax_acc": 0.009
+   },
+   "30": {
+    "mass_at_target": 0.008,
+    "mean_allowed": 0.017,
+    "addr_ratio": 0.456,
+    "addr_ratio_all": 0.764,
+    "peak_ratio": 16.634,
+    "argmax_acc": 0.005
+   },
+   "60": {
+    "mass_at_target": 0.008,
+    "mean_allowed": 0.013,
+    "addr_ratio": 0.599,
+    "addr_ratio_all": 0.745,
+    "peak_ratio": 20.016,
+    "argmax_acc": 0.005
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.048,
+    "mean_allowed": 0.054,
+    "addr_ratio": 0.887,
+    "addr_ratio_all": 4.565,
+    "peak_ratio": 13.021,
+    "argmax_acc": 0.033
+   },
+   "10": {
+    "mass_at_target": 0.024,
+    "mean_allowed": 0.026,
+    "addr_ratio": 0.944,
+    "addr_ratio_all": 2.336,
+    "peak_ratio": 14.277,
+    "argmax_acc": 0.019
+   },
+   "15": {
+    "mass_at_target": 0.014,
+    "mean_allowed": 0.023,
+    "addr_ratio": 0.615,
+    "addr_ratio_all": 1.333,
+    "peak_ratio": 14.899,
+    "argmax_acc": 0.009
+   },
+   "30": {
+    "mass_at_target": 0.008,
+    "mean_allowed": 0.017,
+    "addr_ratio": 0.457,
+    "addr_ratio_all": 0.766,
+    "peak_ratio": 16.719,
+    "argmax_acc": 0.005
+   },
+   "60": {
+    "mass_at_target": 0.008,
+    "mean_allowed": 0.013,
+    "addr_ratio": 0.591,
+    "addr_ratio_all": 0.736,
+    "peak_ratio": 20.131,
+    "argmax_acc": 0.005
+   }
+  }
+ },
+ {
+  "arm": "bypass_wide",
+  "L": 10,
+  "params": 926985,
+  "val": 0.507,
+  "test": 0.496,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.094,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.739,
+    "addr_ratio_all": 3.001,
+    "peak_ratio": 5.106,
+    "argmax_acc": 0.066
+   },
+   "10": {
+    "mass_at_target": 0.04,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.774,
+    "addr_ratio_all": 1.271,
+    "peak_ratio": 6.427,
+    "argmax_acc": 0.039
+   },
+   "15": {
+    "mass_at_target": 0.029,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.667,
+    "addr_ratio_all": 0.93,
+    "peak_ratio": 7.106,
+    "argmax_acc": 0.023
+   },
+   "30": {
+    "mass_at_target": 0.046,
+    "mean_allowed": 0.032,
+    "addr_ratio": 1.441,
+    "addr_ratio_all": 1.464,
+    "peak_ratio": 9.085,
+    "argmax_acc": 0.067
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.094,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.739,
+    "addr_ratio_all": 3.001,
+    "peak_ratio": 5.101,
+    "argmax_acc": 0.066
+   },
+   "10": {
+    "mass_at_target": 0.04,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.773,
+    "addr_ratio_all": 1.27,
+    "peak_ratio": 6.421,
+    "argmax_acc": 0.04
+   },
+   "15": {
+    "mass_at_target": 0.029,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.664,
+    "addr_ratio_all": 0.926,
+    "peak_ratio": 7.101,
+    "argmax_acc": 0.023
+   },
+   "30": {
+    "mass_at_target": 0.046,
+    "mean_allowed": 0.032,
+    "addr_ratio": 1.442,
+    "addr_ratio_all": 1.465,
+    "peak_ratio": 9.085,
+    "argmax_acc": 0.067
+   }
+  }
+ },
+ {
+  "arm": "crossmem_nopos",
+  "L": 0,
+  "params": 659721,
+  "val": 0.511,
+  "test": 0.507,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.126,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.99,
+    "addr_ratio_all": 4.019,
+    "peak_ratio": 15.77,
+    "argmax_acc": 0.126
+   },
+   "10": {
+    "mass_at_target": 0.051,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.999,
+    "addr_ratio_all": 1.641,
+    "peak_ratio": 20.501,
+    "argmax_acc": 0.051
+   },
+   "15": {
+    "mass_at_target": 0.045,
+    "mean_allowed": 0.044,
+    "addr_ratio": 1.034,
+    "addr_ratio_all": 1.441,
+    "peak_ratio": 22.854,
+    "argmax_acc": 0.045
+   },
+   "30": {
+    "mass_at_target": 0.031,
+    "mean_allowed": 0.032,
+    "addr_ratio": 0.983,
+    "addr_ratio_all": 0.998,
+    "peak_ratio": 29.971,
+    "argmax_acc": 0.032
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.127,
+    "mean_allowed": 0.127,
+    "addr_ratio": 1.003,
+    "addr_ratio_all": 4.069,
+    "peak_ratio": 16.159,
+    "argmax_acc": 0.128
+   },
+   "10": {
+    "mass_at_target": 0.051,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.997,
+    "addr_ratio_all": 1.638,
+    "peak_ratio": 21.03,
+    "argmax_acc": 0.051
+   },
+   "15": {
+    "mass_at_target": 0.044,
+    "mean_allowed": 0.044,
+    "addr_ratio": 1.01,
+    "addr_ratio_all": 1.407,
+    "peak_ratio": 23.461,
+    "argmax_acc": 0.044
+   },
+   "30": {
+    "mass_at_target": 0.031,
+    "mean_allowed": 0.032,
+    "addr_ratio": 0.966,
+    "addr_ratio_all": 0.982,
+    "peak_ratio": 30.66,
+    "argmax_acc": 0.03
+   }
+  }
+ },
+ {
+  "arm": "crossmem_nopos",
+  "L": 10,
+  "params": 923913,
+  "val": 0.508,
+  "test": 0.496,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.126,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.992,
+    "addr_ratio_all": 4.025,
+    "peak_ratio": 15.702,
+    "argmax_acc": 0.126
+   },
+   "10": {
+    "mass_at_target": 0.051,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.99,
+    "addr_ratio_all": 1.627,
+    "peak_ratio": 20.415,
+    "argmax_acc": 0.051
+   },
+   "15": {
+    "mass_at_target": 0.045,
+    "mean_allowed": 0.044,
+    "addr_ratio": 1.027,
+    "addr_ratio_all": 1.431,
+    "peak_ratio": 22.773,
+    "argmax_acc": 0.044
+   },
+   "30": {
+    "mass_at_target": 0.03,
+    "mean_allowed": 0.032,
+    "addr_ratio": 0.945,
+    "addr_ratio_all": 0.96,
+    "peak_ratio": 29.846,
+    "argmax_acc": 0.03
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.128,
+    "mean_allowed": 0.127,
+    "addr_ratio": 1.009,
+    "addr_ratio_all": 4.096,
+    "peak_ratio": 16.227,
+    "argmax_acc": 0.128
+   },
+   "10": {
+    "mass_at_target": 0.051,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.994,
+    "addr_ratio_all": 1.632,
+    "peak_ratio": 21.126,
+    "argmax_acc": 0.051
+   },
+   "15": {
+    "mass_at_target": 0.044,
+    "mean_allowed": 0.044,
+    "addr_ratio": 1.013,
+    "addr_ratio_all": 1.412,
+    "peak_ratio": 23.578,
+    "argmax_acc": 0.044
+   },
+   "30": {
+    "mass_at_target": 0.03,
+    "mean_allowed": 0.032,
+    "addr_ratio": 0.939,
+    "addr_ratio_all": 0.954,
+    "peak_ratio": 30.951,
+    "argmax_acc": 0.029
+   }
+  }
+ },
+ {
+  "arm": "crossmem_nopos",
+  "L": 60,
+  "params": 923913,
+  "val": 0.499,
+  "test": 0.49,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.054,
+    "mean_allowed": 0.054,
+    "addr_ratio": 1.008,
+    "addr_ratio_all": 5.189,
+    "peak_ratio": 44.613,
+    "argmax_acc": 0.054
+   },
+   "10": {
+    "mass_at_target": 0.026,
+    "mean_allowed": 0.026,
+    "addr_ratio": 1.008,
+    "addr_ratio_all": 2.494,
+    "peak_ratio": 49.18,
+    "argmax_acc": 0.026
+   },
+   "15": {
+    "mass_at_target": 0.022,
+    "mean_allowed": 0.023,
+    "addr_ratio": 0.978,
+    "addr_ratio_all": 2.119,
+    "peak_ratio": 51.452,
+    "argmax_acc": 0.022
+   },
+   "30": {
+    "mass_at_target": 0.018,
+    "mean_allowed": 0.017,
+    "addr_ratio": 1.01,
+    "addr_ratio_all": 1.692,
+    "peak_ratio": 58.223,
+    "argmax_acc": 0.018
+   },
+   "60": {
+    "mass_at_target": 0.013,
+    "mean_allowed": 0.013,
+    "addr_ratio": 0.974,
+    "addr_ratio_all": 1.212,
+    "peak_ratio": 71.41,
+    "argmax_acc": 0.013
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.053,
+    "mean_allowed": 0.054,
+    "addr_ratio": 0.998,
+    "addr_ratio_all": 5.134,
+    "peak_ratio": 47.323,
+    "argmax_acc": 0.053
+   },
+   "10": {
+    "mass_at_target": 0.026,
+    "mean_allowed": 0.026,
+    "addr_ratio": 1.001,
+    "addr_ratio_all": 2.478,
+    "peak_ratio": 52.192,
+    "argmax_acc": 0.026
+   },
+   "15": {
+    "mass_at_target": 0.023,
+    "mean_allowed": 0.023,
+    "addr_ratio": 1.017,
+    "addr_ratio_all": 2.203,
+    "peak_ratio": 54.624,
+    "argmax_acc": 0.023
+   },
+   "30": {
+    "mass_at_target": 0.018,
+    "mean_allowed": 0.017,
+    "addr_ratio": 1.019,
+    "addr_ratio_all": 1.707,
+    "peak_ratio": 61.903,
+    "argmax_acc": 0.018
+   },
+   "60": {
+    "mass_at_target": 0.012,
+    "mean_allowed": 0.013,
+    "addr_ratio": 0.951,
+    "addr_ratio_all": 1.184,
+    "peak_ratio": 76.252,
+    "argmax_acc": 0.012
+   }
+  }
+ },
+ {
+  "arm": "crossmem_pos",
+  "L": 0,
+  "params": 659721,
+  "val": 0.604,
+  "test": 0.585,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.121,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.954,
+    "addr_ratio_all": 3.873,
+    "peak_ratio": 16.067,
+    "argmax_acc": 0.121
+   },
+   "10": {
+    "mass_at_target": 0.047,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.917,
+    "addr_ratio_all": 1.507,
+    "peak_ratio": 20.92,
+    "argmax_acc": 0.047
+   },
+   "15": {
+    "mass_at_target": 0.022,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.501,
+    "addr_ratio_all": 0.698,
+    "peak_ratio": 23.35,
+    "argmax_acc": 0.022
+   },
+   "30": {
+    "mass_at_target": 0.028,
+    "mean_allowed": 0.032,
+    "addr_ratio": 0.879,
+    "addr_ratio_all": 0.893,
+    "peak_ratio": 30.508,
+    "argmax_acc": 0.028
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.209,
+    "mean_allowed": 0.127,
+    "addr_ratio": 1.651,
+    "addr_ratio_all": 6.702,
+    "peak_ratio": 16.365,
+    "argmax_acc": 0.21
+   },
+   "10": {
+    "mass_at_target": 0.031,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.612,
+    "addr_ratio_all": 1.005,
+    "peak_ratio": 21.316,
+    "argmax_acc": 0.031
+   },
+   "15": {
+    "mass_at_target": 0.03,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.684,
+    "addr_ratio_all": 0.953,
+    "peak_ratio": 23.791,
+    "argmax_acc": 0.03
+   },
+   "30": {
+    "mass_at_target": 0.016,
+    "mean_allowed": 0.032,
+    "addr_ratio": 0.498,
+    "addr_ratio_all": 0.506,
+    "peak_ratio": 31.157,
+    "argmax_acc": 0.016
+   }
+  }
+ },
+ {
+  "arm": "crossmem_pos",
+  "L": 10,
+  "params": 923913,
+  "val": 0.505,
+  "test": 0.499,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.116,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.915,
+    "addr_ratio_all": 3.713,
+    "peak_ratio": 16.06,
+    "argmax_acc": 0.116
+   },
+   "10": {
+    "mass_at_target": 0.048,
+    "mean_allowed": 0.051,
+    "addr_ratio": 0.939,
+    "addr_ratio_all": 1.543,
+    "peak_ratio": 20.91,
+    "argmax_acc": 0.048
+   },
+   "15": {
+    "mass_at_target": 0.017,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.381,
+    "addr_ratio_all": 0.531,
+    "peak_ratio": 23.331,
+    "argmax_acc": 0.016
+   },
+   "30": {
+    "mass_at_target": 0.033,
+    "mean_allowed": 0.032,
+    "addr_ratio": 1.054,
+    "addr_ratio_all": 1.071,
+    "peak_ratio": 30.614,
+    "argmax_acc": 0.033
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.119,
+    "mean_allowed": 0.127,
+    "addr_ratio": 0.935,
+    "addr_ratio_all": 3.793,
+    "peak_ratio": 16.361,
+    "argmax_acc": 0.118
+   },
+   "10": {
+    "mass_at_target": 0.055,
+    "mean_allowed": 0.051,
+    "addr_ratio": 1.071,
+    "addr_ratio_all": 1.759,
+    "peak_ratio": 21.312,
+    "argmax_acc": 0.055
+   },
+   "15": {
+    "mass_at_target": 0.023,
+    "mean_allowed": 0.044,
+    "addr_ratio": 0.519,
+    "addr_ratio_all": 0.723,
+    "peak_ratio": 23.787,
+    "argmax_acc": 0.023
+   },
+   "30": {
+    "mass_at_target": 0.013,
+    "mean_allowed": 0.032,
+    "addr_ratio": 0.406,
+    "addr_ratio_all": 0.412,
+    "peak_ratio": 31.21,
+    "argmax_acc": 0.013
+   }
+  }
+ },
+ {
+  "arm": "crossmem_pos",
+  "L": 60,
+  "params": 923913,
+  "val": 0.502,
+  "test": 0.489,
+  "addr_probe_init": {
+   "0": {
+    "mass_at_target": 0.061,
+    "mean_allowed": 0.054,
+    "addr_ratio": 1.129,
+    "addr_ratio_all": 5.811,
+    "peak_ratio": 46.726,
+    "argmax_acc": 0.061
+   },
+   "10": {
+    "mass_at_target": 0.022,
+    "mean_allowed": 0.026,
+    "addr_ratio": 0.842,
+    "addr_ratio_all": 2.084,
+    "peak_ratio": 51.536,
+    "argmax_acc": 0.022
+   },
+   "15": {
+    "mass_at_target": 0.014,
+    "mean_allowed": 0.023,
+    "addr_ratio": 0.617,
+    "addr_ratio_all": 1.338,
+    "peak_ratio": 53.939,
+    "argmax_acc": 0.014
+   },
+   "30": {
+    "mass_at_target": 0.021,
+    "mean_allowed": 0.017,
+    "addr_ratio": 1.183,
+    "addr_ratio_all": 1.983,
+    "peak_ratio": 61.136,
+    "argmax_acc": 0.021
+   },
+   "60": {
+    "mass_at_target": 0.011,
+    "mean_allowed": 0.013,
+    "addr_ratio": 0.842,
+    "addr_ratio_all": 1.049,
+    "peak_ratio": 75.547,
+    "argmax_acc": 0.011
+   }
+  },
+  "addr_probe_final": {
+   "0": {
+    "mass_at_target": 0.041,
+    "mean_allowed": 0.054,
+    "addr_ratio": 0.764,
+    "addr_ratio_all": 3.933,
+    "peak_ratio": 47.858,
+    "argmax_acc": 0.041
+   },
+   "10": {
+    "mass_at_target": 0.033,
+    "mean_allowed": 0.026,
+    "addr_ratio": 1.289,
+    "addr_ratio_all": 3.192,
+    "peak_ratio": 52.791,
+    "argmax_acc": 0.033
+   },
+   "15": {
+    "mass_at_target": 0.028,
+    "mean_allowed": 0.023,
+    "addr_ratio": 1.241,
+    "addr_ratio_all": 2.69,
+    "peak_ratio": 55.259,
+    "argmax_acc": 0.028
+   },
+   "30": {
+    "mass_at_target": 0.018,
+    "mean_allowed": 0.017,
+    "addr_ratio": 1.044,
+    "addr_ratio_all": 1.749,
+    "peak_ratio": 62.664,
+    "argmax_acc": 0.018
+   },
+   "60": {
+    "mass_at_target": 0.014,
+    "mean_allowed": 0.013,
+    "addr_ratio": 1.048,
+    "addr_ratio_all": 1.305,
+    "peak_ratio": 77.466,
+    "argmax_acc": 0.014
+   }
+  }
+ },
+ {
+  "arm": "crossmem_slots_nopos",
+  "L": 10,
+  "params": 480713,
+  "val": 0.516,
+  "test": 0.498,
+  "addr_probe_init": {},
+  "addr_probe_final": {}
+ },
+ {
+  "arm": "crossmem_slots_pos",
+  "L": 10,
+  "params": 480713,
+  "val": 0.533,
+  "test": 0.503,
+  "addr_probe_init": {},
+  "addr_probe_final": {}
+ }
+]
